@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="w-full h-full mx-auto flex justify-center items-center">
           <div className="animate-in fade-in zoom-in delay-120 duration-700">
             <div>
-              <h1 className="sm:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-[#fff] via-yellow-600 to-[#55e022] font-bold text-white text-4xl">
+              <h1 className="sm:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-[#fff] via-yellow-500 to-[#55e022] font-bold text-white text-4xl">
                 {" "}
                 Join us today!!!{" "}
               </h1>
