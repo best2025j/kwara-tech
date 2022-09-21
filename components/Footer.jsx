@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaLinkedinIn, FaTwitter, FaYoutube
 const Footer = () => {
   return (
     //   GRID CONTENT LAYER
-    <div className="w-full bg-black text-slate-300 py-4 px-2">
+    <div className="w-full bg-black text-slate-300 py-14 px-2">
       <div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6 border-gray-600 py-4">
         <div>
           <h2 className="font-bold pt-2 uppercase">solutions</h2>
@@ -46,9 +46,19 @@ const Footer = () => {
           </ul>
         </div>
 
+        <div className="max-w-[1240px] col-span-2 py-6 text-center text-white w-full h-full mx-auto flex justify-center items-center">
+          <p className="sm:font-medium">
+            We work with some of the finest industry experts, to provide
+            top-notch traning and empowerment programs to individuals, team and
+            organizationS, SKILLING and Up-skilling them to finding their
+            desired employment in tech and also creating tech-based processes
+            and solutions.
+          </p>
+        </div>
+
         {/* SUBSRIBE */}
 
-        <div className="col-span-2 pt-8 md:pt-2">
+        {/* <div className="col-span-2 pt-8 md:pt-2">
           <p className="font-bold md:text-2xl text-base uppercase">
             Subscribe to our newsletter
           </p>
@@ -65,18 +75,9 @@ const Footer = () => {
               Subscribe
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
       {/*  */}
-      <div className="max-w-[1240px] py-6 text-center text-white w-full h-full mx-auto flex justify-center items-center">
-        <p className="sm:font-medium">
-          We work with some of the finest industry experts, to provide top-notch
-          traning and empowerment programs to individuals, team and
-          organizationS, SKILLING and Up-skilling them to finding their desired
-          employment in tech and also creating tech-based processes and
-          solutions.
-        </p>
-      </div>
 
       {/* SOCIAL MEDIA LINKS */}
 

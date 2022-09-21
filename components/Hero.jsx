@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="py-20 px-4">
-      <div className="w-[100%] mx-auto h-80 md:h-[85vh] text-center bg-gradient-to-r from-[#3762f2] to-[#123dcc] rounded-[1.5rem] sm:rounded-[3rem]">
+      <div className="w-[100%] mx-auto h-[80vh] md:h-[85vh] text-center bg-gradient-to-r from-[#3762f2] to-[#123dcc] rounded-[1.5rem] sm:rounded-[3rem]">
         <div className="w-full h-full mx-auto flex justify-center items-center">
           <div className="animate-in fade-in zoom-in delay-120 duration-700">
             <div>

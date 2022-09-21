@@ -1,4 +1,7 @@
 import Head from 'next/head'
+import Cards from "../components/Cards";
+import Content from "../components/Content";
+import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Navbar from '../components/navbar';
 
@@ -12,6 +15,9 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
+      <Cards />
+      <Content />
+      <Footer />
     </div>
   );
 }

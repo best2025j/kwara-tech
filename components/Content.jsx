@@ -1,20 +1,20 @@
 import React from "react";
-import Image from "next/image";
-import image from "../Assets/aqa.jpg";
-import image1 from "../Assets/games.jpg";
-import image2 from "../Assets/paul.webp";
-import image3 from "../Assets/skils.jpg";
+// import Image from "next/image";
+// import image from "../Assets/aqa.jpg";
+// import image1 from "../Assets/games.jpg";
+// import image2 from "../Assets/paul.webp";
+// import image3 from "../Assets/skils.jpg";
 
 const Content = () => {
   return (
     <div className="w-full h-full text-white text-center bg-gradient-to-r from-[#233dfc] to-[#233dfc] py-20 px-4">
       <div className="max-w-[1240px] w-full h-full mx-auto space-y-4">
         <h1 className="sm:text-4xl text-2xl">
-          Kickstart your tech career with <b>kwara Tech Academy.</b>
+          Kickstart your tech career with <b className="bg-clip-text text-transparent bg-gradient-to-r from-[#fff] via-yellow-500 to-[#55e022]">kwara Tech Academy.</b>
         </h1>
 
         {/*  */}
-        <p className="font-medium text-md">
+        <p className="font-medium text-lg">
           We are on a mission to empower young passionate tech innovators round
           the globe, helping them to build qualitative and high-paying tech
           careers and to become glober tech giant through our virtual and on
@@ -26,15 +26,7 @@ const Content = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-5 text-center ">
           {/*  */}
           <div className="px-4 py-10">
-            <div className="p-4">
-              <Image
-                src={image}
-                alt="/"
-                width={266}
-                height={266}
-                className="rounded-3xl"
-              />
-            </div>
+            {/* <div className="p-4"></div> */}
 
             {/*  */}
             <div className=" space-y-4">
@@ -49,15 +41,7 @@ const Content = () => {
           </div>
           {/*  */}
           <div className="px-4 py-10">
-            <div className="p-4">
-              <Image
-                src={image1}
-                alt="/"
-                width={266}
-                height={266}
-                className="rounded-3xl"
-              />
-            </div>
+            {/* <div className="p-4"></div> */}
 
             {/*  */}
             <div className=" space-y-4">
@@ -72,15 +56,7 @@ const Content = () => {
           </div>
           {/*  */}
           <div className="px-4 py-10">
-            <div className="p-4">
-              <Image
-                src={image2}
-                alt="/"
-                width={266}
-                height={266}
-                className="rounded-3xl"
-              />
-            </div>
+            {/* <div className="p-4"></div> */}
             {/*  */}
             <div className=" space-y-4">
               <div className="text-base">
@@ -94,15 +70,7 @@ const Content = () => {
           </div>
           {/*  */}
           <div className="px-4 py-10">
-            <div className="p-4">
-              <Image
-                src={image3}
-                alt="/"
-                width={266}
-                height={266}
-                className="rounded-3xl"
-              />
-            </div>
+            {/* <div className="p-4"></div> */}
             {/*  */}
             <div className=" space-y-4">
               <div className="text-base">

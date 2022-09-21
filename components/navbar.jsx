@@ -27,12 +27,12 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "w-full h-[6rem] border-b shadow-2xl bg-white duration-1000 easy-in fixed z-[100]"
-          : "fixed w-full h-20 z-[100] bg-white"
+          ? "w-full h-[4rem] border-b shadow-md bg-white duration-1000 easy-in fixed z-[100]"
+          : "fixed w-full h-[5rem] z-[100] bg-white"
       }
     >
-      <div className="px-4 py-4 flex w-full justify-between items-center sm:justify-around h-full 2xl:px-16">
-        <Link href="/">
+      <div className="px-4 py-6 flex w-full justify-between items-center sm:justify-around h-full 2xl:px-16">
+        <Link href="#">
           <a>
             <Image
               src={image}
