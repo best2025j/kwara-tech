@@ -14,11 +14,11 @@ const programs = () => {
 
       {/* GRID */}
       <div className="px-4">
-        <p className="sm:text-2xl font-bold tracking-wide">
+        <p className="sm:text-2xl font-bold tracking-wide text-center">
           Kwara tech programs open for applications
         </p>
 
-        <div className="py-4 grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-3 text-center ">
+        <div className="py-4 animate-in slide-in-from-top duration-700 grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-3 text-center ">
           {/*  */}
           <div className="border-2  rounded-xl duration-300 hover:bg-green-500 hover:text-white active:scale-105 active:text-black bg-blue-500 mx-auto flex justify-center items-center h-40 w-full">
             <Link href="/bootcamp">
@@ -61,7 +61,7 @@ const programs = () => {
 
         {/*  */}
         <div className="py-4 grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5 text-center ">
-          <div className="">
+          <div className="animate-in slide-in-from-left duration-1000">
             <div className="p-2">
               <Image src={image} alt="/" className="rounded-xl" />
               <h2 className="font-bold text-xl">Deborah</h2>
@@ -83,8 +83,10 @@ const programs = () => {
                 </i>
               </p>
             </div>
-          </div>{" "}
-          <div className="">
+          </div>
+          
+          {" "}
+          <div className="animate-in slide-in-from-top duration-1000">
             <div className="p-2">
               <Image src={image1} alt="/" className="rounded-xl" />
               <h2 className="font-bold text-xl">Isaac</h2>
@@ -105,8 +107,10 @@ const programs = () => {
                 </i>
               </p>
             </div>
-          </div>{" "}
-          <div className="">
+          </div>
+          
+          {" "}
+          <div className="animate-in slide-in-from-right duration-1000">
             <div className="p-2">
               <Image src={image2} alt="/" className="rounded-xl" />
               <h2 className="font-bold text-xl">Stella</h2>
