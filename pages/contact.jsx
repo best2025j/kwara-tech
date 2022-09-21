@@ -110,7 +110,6 @@ const contact = () => {
                       className="text-black border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="name"
-                      value={name}
                       onChange={(e) => setName(e.target.value)}
                     />
                   </div>
@@ -122,7 +121,6 @@ const contact = () => {
                       className="text-black border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="phone"
-                      value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                     />
                   </div>
@@ -133,7 +131,6 @@ const contact = () => {
                     className="text-black border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
                     name="email"
-                    value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
@@ -143,7 +140,6 @@ const contact = () => {
                     className="text-black border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
                     name="subject"
-                    value={subject}
                     onChange={(e) => setSubject(e.target.value)}
                   />
                 </div>
@@ -153,7 +149,6 @@ const contact = () => {
                     className="border-2 rounded-lg p-3 text-black border-gray-300"
                     rows="5"
                     name="message"
-                    value={message}
                     onChange={(e) => setMessage(e.target.value)}
                   />
                 </div>
