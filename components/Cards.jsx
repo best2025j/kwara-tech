@@ -32,7 +32,7 @@ const Cards = () => {
               Kids also have a spec in tech .Groom your kids to become
               tomorrow&#39;s leading tech giants.
             </p>
-            <button className="hover:bg-blue-800 bg-[#233dfc] text-white py-3 px-9 text-black font-bold">
+            <button className="hover:bg-blue-800 bg-[#233dfc] text-white py-3 px-9 font-bold">
               JOIN NOW
             </button>
           </div>
@@ -62,7 +62,7 @@ const Cards = () => {
               Move your career to the next level by aquiring a professional I.T
             </p>
             <div className="">
-              <button className="hover:bg-blue-800 bg-[#233dfc] text-white  py-3 px-9 text-black font-bold ">
+              <button className="hover:bg-blue-800 bg-[#233dfc] text-white  py-3 px-9 font-bold ">
                 JOIN NOW
               </button>
             </div>
@@ -96,7 +96,7 @@ const Cards = () => {
               our corporate training programers designed for top, middle and
               technincal level workers and managers.
             </p>
-            <button className="hover:bg-blue-800 bg-[#233dfc] text-white py-3 px-9 text-black font-bold">
+            <button className="hover:bg-blue-800 bg-[#233dfc] text-white py-3 px-9 font-bold">
               JOIN NOW
             </button>
           </div>
