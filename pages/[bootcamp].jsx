@@ -13,7 +13,7 @@ const bootcamp = () => {
               <h1 className=" font-bold text-4xl">Coding Bootcamp For Kids.</h1>
             </div>
             <div>
-              <p>8Weeks onsite Programs Join NOW</p>
+              <p className="text-white text-xl font-bold">8Weeks onsite Programs Join NOW</p>
             </div>
           </div>
         </div>
