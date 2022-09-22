@@ -97,8 +97,8 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[72%] sm:w-[60%] md:w-[45%] h-screen bg-white border-r rounded-r-3xl p-5 ease-in duration-500"
-              : "fixed left-[-100%] h-screen top-0 p-5 ease-out duration-700 bg-slate-600"
+              ? " fixed left-0 top-0 w-[72%] sm:w-[60%] h-full bg-white border-r rounded-r-3xl p-5 ease-in duration-700"
+              : "fixed left-[-100%] h-full top-0 p-5 ease-out duration-700 bg-slate-600"
           }
         >
           <div className="">
@@ -127,13 +127,13 @@ const Navbar = () => {
 
             {/*  */}
 
-            <div className="border-b border-gray-400 py-4">
-              <p className="w-[90%] sm:w-[90%] md:w-full py-2">
+            <div className="border-b border-gray-400">
+              <p className="w-[90%] sm:w-[90%] md:w-full">
                 Let&#39; build something together
               </p>
             </div>
 
-            <div className="flex flex-col py-4 ">
+            <div className="flex flex-col pt-3 ">
               <ul className="font-600 space-y-1">
                 <li className="text-sm" onClick={handleClose}>
                   <Link href="/">Home</Link>
@@ -159,11 +159,11 @@ const Navbar = () => {
               </ul>
             </div>
 
-            <div className="space-y-4 ">
-              <button className="active:text-white w-full active:bg-[#264ac4] px-5 text-[#264ac4] shadow-none">
+            <div className="space-y-4 bottom-0 sm:bottom-0 absolute  py-[6px]">
+              <button className="active:text-white sm:w-[22rem] w-[14rem] active:bg-[#264ac4] px-5 text-[#264ac4] shadow-none">
                 <Link href="/signin">Sign-In</Link>
               </button>
-              <button className="px-4 active:text-white w-full active:bg-[#264ac4] py-2 bg-[#ffff] text-[#264ac4]">
+              <button className="sm:w-[22rem] active:text-white w-[14rem] active:bg-[#264ac4] py-2 bg-[#ffff] text-[#264ac4]">
                 <Link href="/signup">Sign-Up</Link>
               </button>
             </div>
