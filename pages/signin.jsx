@@ -7,23 +7,23 @@ import Link from "next/link";
  
 const signin = (props) => {
   return (
-     <div className="flex items-center w-full bg-slate-100 sm:min-h-screen">
+     <div className="flex items-center w-full bg-[slate-100] sm:min-h-screen">
        <div className="flex-1 h-full max-w-5xl bg-white mx-auto rounded-l-xl shadow-xl">
-         <div className="flex flex-col sm:flex-row">
-           <div className="h-32 sm:h-[610px] sm:w-1/2 py-16 px-10 hidden md:flex">
+         <div className="flex flex-col md:flex-row">
+           <div className="h-32 md:h-[610px] md:w-1/2 py-16 px-10 hidden md:flex">
              <Image src={image} alt="" className="object-center w-full h-full" />
            </div>
 
            {/*  */}
-           <div className="border rounded-l-3xl items-center text-center py-32 max-w-4xl flex justify-center sm:p-12 md:w-1/2">
-             <div className="w-full h-[99.4vh] md:h-96 sm:py-0">
+           <div className="border rounded-l-3xl items-center text-center py-32 max-w-4xl flex justify-center md:p-12 md:w-1/2">
+             <div className="w-full h-[60.4vh] md:h-96 md:py-0">
                <div className="">
                  <Image
                    src={image2}
                    width="110px"
                    height="128px"
                    className=""
-                   alt=""
+                  alt=""
                  />
                </div>
 

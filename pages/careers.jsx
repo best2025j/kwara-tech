@@ -15,9 +15,8 @@ const careers = () => {
         </div>
 
         <div className="w-full relative h-full mx-auto top-20 flex justify-center items-center">
-          <h1 className="md:text-4xl text-sm font-bold text-white">
-            JOIN OUR TERM.{" "}
-            <span className="text-yellow-500">YOU WONT REGRET IT.</span>
+          <h1 className="md:text-4xl text-sm font-bold text-white animate-in fade-in zoom-in delay-120 duration-1000 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#fff] via-yellow-500 to-[#55e022]">
+            JOIN OUR TERM.YOU WONT REGRET IT.
           </h1>
         </div>
       </div>

@@ -31,7 +31,7 @@ const Navbar = () => {
           : "fixed w-full h-[5rem] z-[100] bg-white"
       }
     >
-      <div className="px-4 py-6 flex w-full justify-between items-center sm:justify-around h-full 2xl:px-16">
+      <div className="px-4 py-6 flex w-full justify-between items-center md:justify-around h-full 2xl:px-16">
         <Link href="#">
           <a>
             <Image
@@ -72,10 +72,10 @@ const Navbar = () => {
         {/* FORM BUTTON*/}
 
         <div className="hidden md:flex">
-          <button className="text-black rounded-3xl px-4 active:text-[#264ac4] shadow-none">
+          <button className="text-black rounded-xl px-4 active:text-[#264ac4] shadow-none">
             <Link href="/signin">Sign-In</Link>
           </button>
-          <button className="px-4 active:text-white rounded-3xl active:bg-[#264ac4] py-[5px] bg-[#ffff] text-[#264ac4]">
+          <button className="px-6 active:text-white rounded-lg active:bg-[#264ac4] py-[9px] bg-[#ffff] text-[#264ac4]">
             <Link href="/signup">Sign-Up</Link>
           </button>
         </div>

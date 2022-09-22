@@ -14,7 +14,7 @@ const signup = (props) => {
 
           {/*  */}
           <div className="border rounded-l-3xl items-center text-center max-w-4xl py-[1.6rem] flex justify-center p-6 sm:p-12 md:w-1/2">
-            <div className="w-full h-[75.4vh] md:h-96">
+            <div className="w-full h-[92vh] md:h-96">
               <div className="flex justify-center items-center">
                 <Image
                   src={image2}
