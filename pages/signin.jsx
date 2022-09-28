@@ -1,10 +1,28 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import image from "../Assets/sitting-6.png";
 import image2 from "../Assets/kw.png";
 import Link from "next/link";
 
-const signin = (props) => {
+const signin = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+
+  const { createUser } = UserAuth();
+
+  const HandleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    try {
+      await createUser(email, password);
+    } catch (e) {
+      setError(e.message);
+      console.log(e.message);
+    }
+  };
+
   return (
     <div className="flex items-center w-full bg-[slate-100] sm:min-h-screen">
       <div className="flex-1 h-full max-w-5xl bg-white mx-auto rounded-l-xl shadow-xl">
@@ -35,10 +53,11 @@ const signin = (props) => {
                 action="/api/form"
                 method="post"
                 className="space-y-3"
-                // onSubmit={jdd}
+                onSubmit={HandleSubmit}
               >
                 <div>
                   <input
+                    onChange={(e) => setEmail(e.target.value)}
                     className="bg-slate-100 w-[20rem] px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
                     type="email"
                     placeholder=" email/username"
@@ -51,6 +70,7 @@ const signin = (props) => {
                 {/* PASSWORD INPUT */}
                 <div>
                   <input
+                    onChange={(e) => setPassword(e.target.value)}
                     className="bg-slate-100 w-[20rem] px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
                     type="password"
                     id="password"
@@ -73,7 +93,7 @@ const signin = (props) => {
                 </button>
 
                 <p className="text-center text-sm">
-                  You dont have an account?
+                  You dont have an account yet?
                   <span className="font-bold">
                     <Link
                       href="/signup"

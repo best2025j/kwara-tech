@@ -1,9 +1,28 @@
+import React, { useState } from "react";
 import Image from "next/image";
 import image from "../Assets/sitting-6.png";
 import image2 from "../Assets/kw.png";
 import Link from "next/link";
+import { UserAuth } from "../service/AuthContext";
 
-const signup = (props) => {
+const signup = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const { createUser } = UserAuth();
+
+  const HandleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    try {
+      await createUser(email, password);
+    } catch (e) {
+      setError(e.message);
+      console.log(e.message);
+    }
+  };
+
   return (
     <div className="flex items-center w-full bg-slate-100 sm:min-h-screen">
       <div className="flex-1 h-full max-w-5xl bg-white mx-auto rounded-lg shadow-xl">
@@ -34,31 +53,12 @@ const signup = (props) => {
                 action=""
                 method="post"
                 className="space-y-2"
-                // onSubmit={submitFormHandler}
+                onSubmit={HandleSubmit}
               >
+                {/* EMAIL INPUT */}
                 <div>
                   <input
-                    className="bg-slate-100 w-[20rem] px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                    type="text"
-                    placeholder=" firstname"
-                    id="username"
-                    name="username"
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    className="bg-slate-100 w-[20rem] px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                    type="text"
-                    placeholder=" lastname"
-                    id="username"
-                    name="username"
-                    required
-                  />
-                </div>
-                {/*  */}
-                <div>
-                  <input
+                    onChange={(e) => setEmail(e.target.value)}
                     className="bg-slate-100 w-[20rem] px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
                     type="email"
                     placeholder="  email"
@@ -70,6 +70,7 @@ const signup = (props) => {
                 {/* PASSWORD INPUT */}
                 <div>
                   <input
+                    onChange={(e) => setPassword(e.target.value)}
                     className="bg-slate-100 w-[20rem] px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
                     type="password"
                     id="password"
@@ -82,26 +83,13 @@ const signup = (props) => {
                     title="Password should be digits (0 to 9) or alphabets (a to z)."
                   />
                 </div>
-                {/*  */}
-                <div>
-                  <input
-                    className="bg-slate-100 w-[20rem] px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                    type="password"
-                    id="password"
-                    name="password"
-                    required
-                    minLength="6"
-                    maxLength="20"
-                    placeholder=" confirm Password"
-                    pattern="[a-z0-9]{1,15}"
-                    title="Password should be digits (0 to 9) or alphabets (a to z)."
-                  />
-                </div>
+
+                {/*BU  */}
 
                 {/* button */}
                 <div className="pt-2">
                   <button
-                    // onClick={submitFormHandler}
+                    // onChange={submitFormHandler}
                     type="submit"
                     className=" w-[20rem] text-center px-4 py-2 text-sm font-medium text-black transition-colors duration-150 hover:text-[#e6e6e9] border border-transparent rounded-lg active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
                   >
