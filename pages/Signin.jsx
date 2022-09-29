@@ -35,11 +35,11 @@ const Signup = () => {
                 action="/api/form"
                 method="post"
                 className="space-y-3"
-                onSubmit={HandleSubmit}
+                // onSubmit={HandleSubmit}
               >
                 <div>
                   <input
-                    onChange={(e) => setEmail(e.target.value)}
+                    // onChange={(e) => setEmail(e.target.value)}
                     className="bg-slate-100 w-[20rem] px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
                     type="email"
                     placeholder=" email/username"
@@ -52,7 +52,7 @@ const Signup = () => {
                 {/* PASSWORD INPUT */}
                 <div>
                   <input
-                    onChange={(e) => setPassword(e.target.value)}
+                    // onChange={(e) => setPassword(e.target.value)}
                     className="bg-slate-100 w-[20rem] px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
                     type="password"
                     id="password"
