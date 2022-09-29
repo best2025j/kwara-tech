@@ -1,28 +1,11 @@
-import React, { useState } from "react";
+import React  from "react";
 import Image from "next/image";
 import image from "../Assets/sitting-6.png";
 import image2 from "../Assets/kw.png";
 import Link from "next/link";
 
 const Signup = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-
-    const { createUser } = UserAuth();
-
-    const HandleSubmit = async (e) => {
-      e.preventDefault();
-      setError("");
-      try {
-        await createUser(email, password);
-      } catch (e) {
-        setError(e.message);
-        console.log(e.message);
-      }
-    };
-
-
+  
   return (
     <div className="flex items-center w-full bg-slate-100 sm:min-h-screen">
       <div className="flex-1 h-full max-w-5xl bg-white mx-auto rounded-lg shadow-xl">
