@@ -3,25 +3,25 @@ import Image from "next/image";
 import image from "../Assets/sitting-6.png";
 import image2 from "../Assets/kw.png";
 import Link from "next/link";
-import { UserAuth } from "../service/AuthContext";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const { createUser } = UserAuth();
+    const { createUser } = UserAuth();
 
-  const HandleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-    try {
-      await createUser(email, password);
-    } catch (e) {
-      setError(e.message);
-      console.log(e.message);
-    }
-  };
+    const HandleSubmit = async (e) => {
+      e.preventDefault();
+      setError("");
+      try {
+        await createUser(email, password);
+      } catch (e) {
+        setError(e.message);
+        console.log(e.message);
+      }
+    };
+
 
   return (
     <div className="flex items-center w-full bg-slate-100 sm:min-h-screen">
@@ -53,12 +53,12 @@ const Signup = () => {
                 action=""
                 method="post"
                 className="space-y-2"
-                onSubmit={HandleSubmit}
+                // onSubmit={HandleSubmit}
               >
                 {/* EMAIL INPUT */}
                 <div>
                   <input
-                    onChange={(e) => setEmail(e.target.value)}
+                    // onChange={(e) => setEmail(e.target.value)}
                     className="bg-slate-100 w-[20rem] px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
                     type="text"
                     placeholder="  full name"
@@ -70,7 +70,7 @@ const Signup = () => {
                 {/* EMAIL INPUT */}
                 <div>
                   <input
-                    onChange={(e) => setEmail(e.target.value)}
+                    // onChange={(e) => setEmail(e.target.value)}
                     className="bg-slate-100 w-[20rem] px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
                     type="email"
                     placeholder="  email"
@@ -82,7 +82,7 @@ const Signup = () => {
                 {/* PASSWORD INPUT */}
                 <div>
                   <input
-                    onChange={(e) => setPassword(e.target.value)}
+                    // onChange={(e) => setPassword(e.target.value)}
                     className="bg-slate-100 w-[20rem] px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
                     type="password"
                     id="password"
@@ -128,5 +128,6 @@ const Signup = () => {
     </div>
   );
 };
+
 
 export default Signup;
