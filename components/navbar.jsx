@@ -73,10 +73,10 @@ const Navbar = () => {
 
         <div className="hidden md:flex">
           <button className="text-black rounded-xl px-4 active:text-[#264ac4] shadow-none">
-            <Link href="/signin">Sign-In</Link>
+            <Link href="/Signin">Sign-In</Link>
           </button>
           <button className="px-6 active:text-white rounded-lg active:bg-[#264ac4] py-[9px] bg-[#ffff] text-[#264ac4]">
-            <Link href="/signup">Sign-Up</Link>
+            <Link href="/Signup">Sign-Up</Link>
           </button>
         </div>
 
@@ -161,10 +161,10 @@ const Navbar = () => {
 
             <div className="space-y-4 bottom-0 sm:bottom-0 absolute  py-[6px]">
               <button className="active:text-white sm:w-[22rem] w-[14rem] active:bg-[#264ac4] px-5 text-[#264ac4] shadow-none">
-                <Link href="/signin">Sign-In</Link>
+                <Link href="/Signin">Sign-In</Link>
               </button>
               <button className="sm:w-[22rem] active:text-white w-[14rem] active:bg-[#264ac4] py-2 bg-[#ffff] text-[#264ac4]">
-                <Link href="/signup">Sign-Up</Link>
+                <Link href="/Signup">Sign-Up</Link>
               </button>
             </div>
           </div>

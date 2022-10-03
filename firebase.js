@@ -7,14 +7,13 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAG63mrCL3ywCKoDcHYX5Ev65_AGXaTB-w",
-  authDomain: "kwaratech-auth.firebaseapp.com",
-  projectId: "kwaratech-auth",
-  storageBucket: "kwaratech-auth.appspot.com",
-  messagingSenderId: "910596637290",
-  appId: "1:910596637290:web:1250d8744fa5ea4a1cc013",
-  measurementId: "G-Q12QZVEFWR",
-  
+  apiKey: NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: NEXT_PUBLIC_FIREBASE_MEASURMENT_ID,
 };
 
 // Initialize Firebase

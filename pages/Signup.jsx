@@ -96,7 +96,7 @@ const Signup = () => {
                   Already have an account?
                   <span className="font-bold">
                     <Link
-                      href="/signin"
+                      href="/Signin"
                       className="hover:text-red-500 active:text-red-600"
                     >
                       Sign in
