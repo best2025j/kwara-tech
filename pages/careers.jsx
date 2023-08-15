@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import image from "../Assets/student.jpg";
 
 const careers = () => {
   return (

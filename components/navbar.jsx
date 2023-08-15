@@ -44,12 +44,21 @@ const Navbar = () => {
           </a>
         </Link>
 
-        {/*  */}
-        <ul className="hidden md:flex">
+        {/* destop view */}
+        <ul className="hidden md:flex capitalize">
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/">Home</Link>
           </li>
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+            <Link href="/course">courses</Link>
+          </li>
+          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+            <Link href="/community">Community</Link>
+          </li>
+          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+            <Link href="/contact">Contact</Link>
+          </li>
+          {/* <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/programs">Programs</Link>
           </li>
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
@@ -58,26 +67,21 @@ const Navbar = () => {
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/blog">Blog</Link>
           </li>
-          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
-            <Link href="/community">Community</Link>
-          </li>
+         
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/careers">Careers</Link>
-          </li>
-          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
-            <Link href="/contact">Contact</Link>
-          </li>
+          </li> */}
         </ul>
 
         {/* FORM BUTTON*/}
 
         <div className="hidden md:flex">
-          <button className="text-black rounded-xl px-4 active:text-[#264ac4] shadow-none">
-            <Link href="/Signin">Sign-In</Link>
+          <button>
+            <Link href="/">get started</Link>
           </button>
-          <button className="px-6 active:text-white rounded-lg active:bg-[#264ac4] py-[9px] bg-[#ffff] text-[#264ac4]">
+          {/* <button className="px-6 active:text-white rounded-lg active:bg-[#264ac4] py-[9px] bg-[#ffff] text-[#264ac4]">
             <Link href="/Signup">Sign-Up</Link>
-          </button>
+          </button> */}
         </div>
 
         <div onClick={handClick} className="md:hidden cursor-pointer">
@@ -139,6 +143,13 @@ const Navbar = () => {
                   <Link href="/">Home</Link>
                 </li>
                 <li className="text-sm" onClick={handleClose}>
+                  <Link href="/community">Community</Link>
+                </li>
+
+                <li className="text-sm" onClick={handleClose}>
+                  <Link href="/contact">Contact</Link>
+                </li>
+                {/* <li className="text-sm" onClick={handleClose}>
                   <Link href="/programs">Programs</Link>
                 </li>
                 <li className="text-sm" onClick={handleClose}>
@@ -148,24 +159,18 @@ const Navbar = () => {
                   <Link href="/blog">Blog</Link>
                 </li>
                 <li className="text-sm" onClick={handleClose}>
-                  <Link href="/community">Community</Link>
-                </li>
-                <li className="text-sm" onClick={handleClose}>
                   <Link href="/careers">Careers</Link>
-                </li>
-                <li className="text-sm" onClick={handleClose}>
-                  <Link href="/contact">Contact</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
             <div className="space-y-4 bottom-0 sm:bottom-0 absolute  py-[6px]">
-              <button className="active:text-white sm:w-[22rem] w-[14rem] active:bg-[#264ac4] px-5 text-[#264ac4] shadow-none">
-                <Link href="/Signin">Sign-In</Link>
+              <button className="active:text-white sm:w-[22rem] w-[14rem] active:bg-[#264ac4] capitalize px-5 text-[#264ac4] shadow-none">
+                <Link href="/Signin">get started</Link>
               </button>
-              <button className="sm:w-[22rem] active:text-white w-[14rem] active:bg-[#264ac4] py-2 bg-[#ffff] text-[#264ac4]">
+              {/* <button className="sm:w-[22rem] active:text-white w-[14rem] active:bg-[#264ac4] py-2 bg-[#ffff] text-[#264ac4]">
                 <Link href="/Signup">Sign-Up</Link>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
