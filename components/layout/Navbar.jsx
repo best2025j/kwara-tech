@@ -3,7 +3,7 @@ import Link from "next/link";
 import image from "../../Assets/images/kw.png";
 import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import Buttonblue from "../Buttons/Buttonblue";
+import ButtonWhite from "../Buttons/ButtonWhite";
 
 const Navbar = ({ children }) => {
   const [nav, setNav] = useState(false);
@@ -87,7 +87,7 @@ const Navbar = ({ children }) => {
         {/* FORM BUTTON*/}
 
         <div className="hidden md:flex">
-          <ButtonBlue onClick={handleOrderClick} label="Get started" co />
+          <ButtonWhite onClick={handleOrderClick} label="Get started" />
         </div>
 
         <div onClick={handClick} className="md:hidden cursor-pointer">
@@ -171,7 +171,7 @@ const Navbar = ({ children }) => {
             </div>
 
             <div className=" bottom-0 sm:bottom-0 absolute py-[6px]  flex items-center flex-grow">
-              <ButtonBlue onClick={handleOrderClick} label="Get started" />
+              <ButtonWhite onClick={handleOrderClick} label="Get started" />
             </div>
           </div>
         </div>
