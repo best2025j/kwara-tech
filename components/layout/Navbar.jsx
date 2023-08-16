@@ -61,27 +61,20 @@ const Navbar = ({ children }) => {
             <Link href="/">Home</Link>
           </li>
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
-            <Link href="/course">courses</Link>
-          </li>
-          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
-            <Link href="/community">Community</Link>
-          </li>
-          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
-            <Link href="/contact">Contact</Link>
-          </li>
-          {/* <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
-            <Link href="/programs">Programs</Link>
-          </li>
-          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
-            <Link href="/hire">Hire</Link>
+            <Link href="/">Our services</Link>
           </li>
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/blog">Blog</Link>
           </li>
-         
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
-            <Link href="/careers">Careers</Link>
-          </li> */}
+            <Link href="/">Programs</Link>
+          </li>
+          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+            <Link href="/">About us</Link>
+          </li>
+          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+            <Link href="/contact">Contact</Link>
+          </li>
         </ul>
 
         {/* FORM BUTTON*/}
@@ -149,24 +142,20 @@ const Navbar = ({ children }) => {
                   <Link href="/">Home</Link>
                 </li>
                 <li className="text-sm" onClick={handleClose}>
-                  <Link href="/community">Community</Link>
+                  <Link href="/">our service</Link>
                 </li>
-
+                <li className="text-sm" onClick={handleClose}>
+                  <Link href="/">Blog</Link>
+                </li>
+                <li className="text-sm" onClick={handleClose}>
+                  <Link href="/">Program</Link>
+                </li>
+                <li className="text-sm" onClick={handleClose}>
+                  <Link href="/">About us</Link>
+                </li>
                 <li className="text-sm" onClick={handleClose}>
                   <Link href="/contact">Contact</Link>
                 </li>
-                {/* <li className="text-sm" onClick={handleClose}>
-                  <Link href="/programs">Programs</Link>
-                </li>
-                <li className="text-sm" onClick={handleClose}>
-                  <Link href="/hire">Hire</Link>
-                </li>
-                <li className="text-sm" onClick={handleClose}>
-                  <Link href="/blog">Blog</Link>
-                </li>
-                <li className="text-sm" onClick={handleClose}>
-                  <Link href="/careers">Careers</Link>
-                </li> */}
               </ul>
             </div>
 

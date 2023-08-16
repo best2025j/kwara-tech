@@ -7,7 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 // import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import ContactImg from "../Assets/contact.jpg";
+import ContactImg from "../Assets/images//contact.jpg";
 
 const contact = () => {
   // const [name, setName] = useState("");

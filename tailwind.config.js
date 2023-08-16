@@ -4,6 +4,19 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+
+  theme: {
+    extend: {
+      colors: {
+        lightBlue: "#3762f2",
+        NavyBlue: "#123dcc",
+        customBlue: "#123dcc",
+        customGreen: "#55e022",
+      },
+    },
+  },
+
+  
   // theme: {
   //   extend: {
   //     keyframes: {
@@ -62,6 +75,4 @@ module.exports = {
     require("tailwindcss-animate"),
     // ...
   ],
-}
-
-
+};

@@ -1,33 +1,76 @@
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import React from "react";
 import image from "../../Assets/images/full-shot-smiley.png";
+import ButtonWhite from "../Buttons/ButtonWhite";
 
 const Cards = () => {
+  const [scrollY, setScrollY] = useState(0);
+  const numbers = [
+    { label: "Courses", count: 200 },
+    { label: "Tutors", count: 500 },
+    { label: "Support", count: 24 },
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="h-screen w-full md:flex items-center">
-      <div className="">
+    <div className="h-full sm:py-20 w-full md:flex items-center">
+      <div className="md:w-1/2 flex justify-center items-center">
         <Image
           src={image}
           alt="guys"
-          width={0}
-          height={0}
-          className="rounded-full"
-          priority
+          width={400}
+          height={400}
+          className="sm:rounded-full "
         />
       </div>
-      <div className=" max-w-xl text-center">
-        <h1 className="">Expand your carrier opportunities</h1>
-        <p>
-          An easy step by step process to setup your classes,get familiar with
-          your tutors, socialise with other students online.
+
+      <div className="h-full w-full md:w-1/2 space-y-6 text-center flex flex-col justify-center items-center">
+        <h1 className="sm:text-4xl font-bold text-black text-4xl">
+          Expand your career opportunities
+        </h1>
+        <p className="max-w-xl text-xl">
+          An easy step by step process to set up your classes, get familiar with
+          your tutors, socialize with other students online.
         </p>
+
+        <div className="flex space-x-6 text-[#3762f2]">
+          {numbers.map((item, index) => (
+            <h2 className="text-2xl pr-2" key={index}>
+              {item.label}
+            </h2>
+          ))}
+        </div>
+
+        <div className="flex divide-x space-x-4 ">
+          {numbers.map((item, index) => (
+            <h1 className="font-extrabold text-5xl pr-2" key={index}>
+              {item.label === "Support"
+                ? Math.min(scrollY, item.count)
+                : Math.min(scrollY < 200 ? 0 : scrollY - 200, item.count)}
+            </h1>
+          ))}
+        </div>
+
+        <div>
+          <ButtonWhite label="get started" />
+        </div>
       </div>
     </div>
   );
 };
 
 export default Cards;
-
 // import Image from "next/image";
 // import React from "react";
 // import image from "../Assets/code1.jpeg";
