@@ -13,10 +13,5 @@ html {
     @apply select-none bg-white dark:bg-black/20;  
   }
 
-  button {
-    @apply text-white rounded-full px-8 py-2 active:text-[#264ac4] shadow-none capitalize bg-[#3762f2] active:scale-100;
-    /* @apply text-white shadow shadow-black
-     rounded-xl  active:scale-100 font-medium; */
-  
-  }
+ 
 }

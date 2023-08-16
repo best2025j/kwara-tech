@@ -1,11 +1,11 @@
 import React from "react";
-import image from "../Assets/student.jpg";
+// import image from "../Assets/images/student.jpg";
 import { AiOutlineSearch } from "react-icons/ai";
 // import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="w-[100%] mx-auto h-[80vh] md:h-[90vh] text-center bg-gradient-to-r from-[#3762f2] to-[#123dcc]">
+    <div className="w-[100%] mx-auto h-[80vh] sm:h-[90vh] text-center bg-gradient-to-r from-[#3762f2] to-[#123dcc]">
       <div className="w-full h-full mx-auto flex justify-center items-center">
         {/* <div className="w-full min:h-full bg-gray-700/90 absolute">
           <Image
@@ -30,17 +30,20 @@ const Hero = () => {
               tutors and best tools
             </p>
             {/*  */}
-            <div className="space-x-1 relative md:mt-2">
-              <input
-                type="'text'"
-                className="p-1 w-80"
-                placeholder="Search for our courses, tutors and tools"
-              />
-              <div className="absolute top-4 md:top-3 insert-y-0 md:left-0 left-4 flex items-center pl-4">
-                <AiOutlineSearch className="text-black/80 md:h-6 md:w-6" />
+            <div className="flex-grow flex items-center justify-center">
+              <div className="relative md:mt-2 ">
+                <input
+                  type="text"
+                  placeholder="Search for our courses, tutors and tools"
+                  className="sm:pl-14 pl-10 md:w-96 sm:h-10 h-8 w-80 bg-white border-2 border-[#00A0E3] outline-none rounded md:rounded-l-[22px] md:placeholder:text-base placeholder:text-xs"
+                />
+                <div className="absolute top-[10px] md:top-2 insert-y-0 sm:left-0 left-8 flex items-center pl-4">
+                  <AiOutlineSearch className="text-black/80 sm:h-6 sm:w-6 " />
+                </div>
+                <button className="sm:rounded-l-xl sm:mt-0 mt-2  bg-blue-500">search</button>
               </div>
-              <button className="rounded-lg">search</button>
             </div>
+            {/*  */}
           </div>
         </div>
       </div>

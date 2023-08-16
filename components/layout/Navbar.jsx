@@ -1,12 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-import image from "../Assets/kw.png";
+import image from "../../Assets/images/kw.png";
 import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Buttonblue from "../Buttons/Buttonblue";
 
-const Navbar = () => {
+const Navbar = ({ children }) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+
+  const handleOrderClick = () => {
+    // Your order logic here
+    console.log("Order placed!");
+  };
+
   const handClick = () => setNav(!nav);
   const handleClose = () => setNav(!nav);
 
@@ -20,6 +27,10 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleShadow);
+
+    return () => {
+      window.removeEventListener("scroll", handleShadow);
+    };
   }, []);
 
   return (
@@ -76,12 +87,7 @@ const Navbar = () => {
         {/* FORM BUTTON*/}
 
         <div className="hidden md:flex">
-          <button>
-            <Link href="/">get started</Link>
-          </button>
-          {/* <button className="px-6 active:text-white rounded-lg active:bg-[#264ac4] py-[9px] bg-[#ffff] text-[#264ac4]">
-            <Link href="/Signup">Sign-Up</Link>
-          </button> */}
+          <ButtonBlue onClick={handleOrderClick} label="Get started" co />
         </div>
 
         <div onClick={handClick} className="md:hidden cursor-pointer">
@@ -164,13 +170,8 @@ const Navbar = () => {
               </ul>
             </div>
 
-            <div className="space-y-4 bottom-0 sm:bottom-0 absolute  py-[6px]">
-              <button className="active:text-white sm:w-[22rem] w-[14rem] active:bg-[#264ac4] capitalize px-5 text-[#264ac4] shadow-none">
-                <Link href="/Signin">get started</Link>
-              </button>
-              {/* <button className="sm:w-[22rem] active:text-white w-[14rem] active:bg-[#264ac4] py-2 bg-[#ffff] text-[#264ac4]">
-                <Link href="/Signup">Sign-Up</Link>
-              </button> */}
+            <div className=" bottom-0 sm:bottom-0 absolute py-[6px]  flex items-center flex-grow">
+              <ButtonBlue onClick={handleOrderClick} label="Get started" />
             </div>
           </div>
         </div>

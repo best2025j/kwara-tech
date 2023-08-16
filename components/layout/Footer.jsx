@@ -1,6 +1,5 @@
-
 import Link from "next/link";
-import image from "../Assets/kw.png";
+import image from "../../Assets/images/kw.png";
 
 import React from "react";
 import {
@@ -167,13 +166,6 @@ export default Footer;
 // };
 
 // export default Footer;
-
-
-
-
-
-
-
 
 // import Link from "next/link";
 // import image from "../Assets/kw.png";
