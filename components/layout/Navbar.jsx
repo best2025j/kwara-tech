@@ -61,16 +61,16 @@ const Navbar = ({ children }) => {
             <Link href="/">Home</Link>
           </li>
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
-            <Link href="/">Our services</Link>
+            <Link href="/ourService">Our services</Link>
           </li>
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/blog">Blog</Link>
           </li>
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
-            <Link href="/">Programs</Link>
+            <Link href="/programs">Programs</Link>
           </li>
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
-            <Link href="/">About us</Link>
+            <Link href="/aboutUs">About us</Link>
           </li>
           <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/contact">Contact</Link>
@@ -142,16 +142,16 @@ const Navbar = ({ children }) => {
                   <Link href="/">Home</Link>
                 </li>
                 <li className="text-sm" onClick={handleClose}>
-                  <Link href="/">our service</Link>
+                  <Link href="/ourService">our service</Link>
                 </li>
                 <li className="text-sm" onClick={handleClose}>
-                  <Link href="/">Blog</Link>
+                  <Link href="/blog">Blog</Link>
                 </li>
                 <li className="text-sm" onClick={handleClose}>
-                  <Link href="/">Program</Link>
+                  <Link href="/programs">Program</Link>
                 </li>
                 <li className="text-sm" onClick={handleClose}>
-                  <Link href="/">About us</Link>
+                  <Link href="/aboutUS">About us</Link>
                 </li>
                 <li className="text-sm" onClick={handleClose}>
                   <Link href="/contact">Contact</Link>

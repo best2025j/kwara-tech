@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const careers = () => {
+const aboutUs = () => {
   return (
     <div className="w-full">
       <div className="w-full md:h-[30rem] h-32 sm:h-[20rem] lg:h-[46rem]">
@@ -32,7 +32,7 @@ const careers = () => {
         </p>
         <p>
           We develop programmers that help individual to build quality and high
-          paying tech careers and at the same time,help organisations build
+          paying tech aboutUs and at the same time,help organisations build
           teams of diverse of diverse tech talent.
         </p>
         <p>
@@ -63,4 +63,4 @@ const careers = () => {
   );
 };
 
-export default careers;
+export default aboutUs;
