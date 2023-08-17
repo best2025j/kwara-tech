@@ -1,48 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import image from "../../Assets/images/kw.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import ButtonWhite from "../Buttons/ButtonWhite";
 import DarkModeSwitch from "../UI/DarkModeSwitch";
 
 const Nav = ({ children }) => {
   const [nav, setNav] = useState(false);
-  const [shadow, setShadow] = useState(false);
 
+  // Your order logic here
   const handleOrderClick = () => {
-    // Your order logic here
     console.log("Order placed!");
   };
 
   const handClick = () => setNav(!nav);
   const handleClose = () => setNav(!nav);
 
-  useEffect(() => {
-    const handleShadow = () => {
-      if (window.scrollY >= 90) {
-        setShadow(true);
-      } else {
-        setShadow(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleShadow);
-
-    return () => {
-      window.removeEventListener("scroll", handleShadow);
-    };
-  }, []);
-
   return (
-    //   navbar
-    <div
-      className={
-        shadow
-          ? "w-full h-[4rem] border-b shadow-md dark:bg-black duration-1000 easy-in fixed z-[100]"
-          : "fixed w-full h-[5rem] z-[100] dark:bg-black"
-      }
-    >
+    <div className="w-full h-[4rem] border-b shadow-md bg-white text-black dark:bg-black duration-1000 easy-in fixed z-[100]">
       <div className="px-4 py-6 flex w-full justify-between items-center md:justify-around h-full 2xl:px-16">
         <Link href="#">
           <a>
@@ -58,30 +34,32 @@ const Nav = ({ children }) => {
 
         {/* destop view */}
         <ul className="hidden md:flex capitalize">
-          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+          <li className="pl-2 font-bold text-sm hover:text-black  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/">Home</Link>
           </li>
-          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+          <li className="pl-2 font-bold text-sm hover:text-black  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/ourService">Our services</Link>
           </li>
-          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+          <li className="pl-2 font-bold text-sm hover:text-black  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/blog">Blog</Link>
           </li>
-          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+          <li className="pl-2 font-bold text-sm hover:text-black  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/programs">Programs</Link>
           </li>
-          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+          <li className="pl-2 font-bold text-sm hover:text-black  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/aboutUs">About us</Link>
           </li>
-          <li className="pl-2 font-bold text-sm hover:text-black text-gray-700 active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+          <li className="pl-2 font-bold text-sm hover:text-black  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
 
         {/* FORM BUTTON*/}
 
-        <div className="hidden md:flex">
-          <ButtonWhite onClick={handleOrderClick} label="Get started" />
+        <div className="hidden md:flex items-center justify-center space-y-2 ">
+          <div className="">
+            <ButtonWhite onClick={handleOrderClick} label="Get started" />
+          </div>
           <div className="">
             <DarkModeSwitch />
           </div>
@@ -96,7 +74,9 @@ const Nav = ({ children }) => {
 
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/80" : ""
+          nav
+            ? "md:hidden fixed left-0 bg-white dark:bg-black w-full h-full ease-in duration-500"
+            : "fixed left-[-100%] h-screen  ease-out duration-700"
         }
       >
         {/* Side Drawer Menu */}
@@ -166,7 +146,7 @@ const Nav = ({ children }) => {
               </div>
             </div>
 
-            <div className="flex-grow bottom-0 sm:bottom-0 absolute flex items-center justify-center w-full">
+            <div className="flex-grow bottom-0 sm:bottom-0 absolute flex items-center h-auto justify-center w-full">
               <ButtonWhite
                 onClick={handleOrderClick}
                 label="Get started"

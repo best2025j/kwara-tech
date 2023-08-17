@@ -1,17 +1,28 @@
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import ButtonDefault from "../Buttons/ButtonDefault";
+import { useTheme } from "next-themes";
 
 const Hero = () => {
+  const { theme } = useTheme();
+
   const handleOrderClick = () => {
     // Your order logic here
     console.log("Order placed!");
   };
 
+  const isDarkMode = theme === "dark";
+
   return (
-    <div className="w-[100%] mx-auto h-[80vh] sm:h-[90vh] text-center bg-gradient-to-r from-[#3762f2] to-[#123dcc] dark:bg-black">
+    <div
+      className={`w-[100%] mx-auto h-[80vh] sm:h-[90vh] text-center ${
+        isDarkMode
+          ? "dark:bg-black"
+          : "bg-gradient-to-r from-[#3762f2] to-[#123dcc]"
+      }`}
+    >
       <div className="w-full h-full mx-auto flex justify-center items-center">
-        <div className="animate-in fade-in zoom-in delay-120  duration-700">
+        <div className="animate-in fade-in zoom-in delay-120 duration-700">
           <div className="">
             <h1 className="sm:text-4xl pb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#fff] via-yellow-500 to-[#55e022] font-bold text-white text-4xl">
               Join us today!!!
@@ -19,12 +30,12 @@ const Hero = () => {
           </div>
           <div className="space-y-6">
             <p className="sm:text-6xl text-sm font-medium px-6 max-w-[900px] text-white">
-              A new improve way to learn and enhance your skills
+              A new improved way to learn and enhance your skills
             </p>
             <p className="sm:text-lg text-sm px-6 max-w-[900px] text-white">
-              learn how to design,code and building real life apps,
-              website,logos in no time. get access to complete courses, the best
-              tutors and best tools
+              Learn how to design, code, and build real-life apps, websites,
+              logos in no time. Get access to complete courses, the best tutors,
+              and the best tools
             </p>
             <div className="flex-grow flex items-center justify-center">
               <div className="relative md:mt-2 sm:space-x-1">
@@ -39,7 +50,9 @@ const Hero = () => {
                 <ButtonDefault
                   onClick={handleOrderClick}
                   label="Search"
-                  className="sm:rounded-l-xl sm:mt-0 mt-2 bg-blue-500 text-white"
+                  className={`sm:rounded-l-xl sm:mt-0 mt-2 ${
+                    isDarkMode ? "bg-blue-500" : "bg-blue-500 text-white"
+                  }`}
                 />
               </div>
             </div>
