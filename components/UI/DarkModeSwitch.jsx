@@ -9,7 +9,7 @@ const DarkModeSwitch = () => {
 
   return (
     <div>
-      {theme === "dark" ? (
+      {theme == "dark" ? (
         <Image
           src={lightmode}
           alt="dark-mode"

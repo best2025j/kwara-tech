@@ -21,7 +21,7 @@ const Nav = ({ children }) => {
     <div
       className={
         nav
-          ? " bg-white dark:bg-black h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
+          ? "bg-white dark:bg-black h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
           : "dark:bg-black bg-white h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
       }
     >
@@ -64,7 +64,7 @@ const Nav = ({ children }) => {
 
         <div className="hidden md:flex items-center justify-center space-y-2 ">
           <div className="">
-            <ButtonWhite onClick={handleOrderClick} label="Get started" />
+            <ButtonWhite onClick={handleOrderClick} label="Get started" className='' />
           </div>
           <div className="">
             <DarkModeSwitch />
@@ -77,11 +77,13 @@ const Nav = ({ children }) => {
       </div>
 
       {/* modal */}
+      {/* MOBILE VEIW */}
 
       <div
+        // backdrop color
         className={
           nav
-            ? "md:hidden fixed left-0 bg-white dark:bg-black w-full h-full ease-in duration-500"
+            ? "md:hidden fixed left-0 bg-slate-700/90 dark:bg-black w-full h-full ease-in duration-500"
             : "fixed left-[-100%] h-screen  ease-out duration-700"
         }
       >
@@ -90,8 +92,8 @@ const Nav = ({ children }) => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[72%] sm:w-[60%] h-full bg-white border-r rounded-r-3xl p-5 ease-in duration-700"
-              : "fixed left-[-100%] h-full top-0 p-5 ease-out duration-700 bg-slate-600"
+              ? " fixed left-0 top-0 w-[72%] sm:w-[60%] h-full bg-white dark:bg-black border-r rounded-r-3xl p-5 ease-in duration-700"
+              : "fixed left-[-100%] h-full top-0 p-5 ease-out duration-700 bg-white"
           }
         >
           <div className="">
@@ -108,11 +110,9 @@ const Nav = ({ children }) => {
                 </a>
               </Link>
 
-              {/* MOBILE VEIW */}
-
               <div
                 onClick={handClick}
-                className="rounded-full shadow bg-white shadow-slate-500 p-2 cursor-pointer"
+                className="rounded-full shadow  shadow-slate-500 p-2 cursor-pointer"
               >
                 <AiOutlineClose size={20} />
               </div>
@@ -152,11 +152,11 @@ const Nav = ({ children }) => {
               </div>
             </div>
 
-            <div className="flex-grow bottom-0 sm:bottom-0 absolute flex items-center h-auto justify-center w-full">
+            <div className="bottom-0 sm:bottom-0 absolute flex items-center justify-center w-[80%]">
               <ButtonWhite
                 onClick={handleOrderClick}
                 label="Get started"
-                className="w-full"
+                className=""
               />
             </div>
           </div>
@@ -167,3 +167,70 @@ const Nav = ({ children }) => {
 };
 
 export default Nav;
+
+// import Image from "next/image";
+// import Link from "next/link";
+// import image from "../../Assets/images/kw.png";
+// import { useState } from "react";
+// import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+// import ButtonWhite from "../Buttons/ButtonWhite";
+// import DarkModeSwitch from "../UI/DarkModeSwitch";
+
+// const Nav = () => {
+//   const [nav, setNav] = useState(false);
+
+//   const handleOrderClick = () => {
+//     console.log("Order placed!");
+//   };
+
+//   const toggleNav = () => setNav(!nav);
+
+//   return (
+//     <nav
+//       className={`${
+//         nav ? "bg-white" : "dark:bg-black"
+//       } h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]`}
+//     >
+//       <div className="px-4 py-6 flex w-full justify-between items-center md:justify-around h-full 2xl:px-16">
+//         <Link href="/">
+//           <a>
+//             <Image
+//               src={image}
+//               alt="/"
+//               width="110px"
+//               height="128px"
+//               className="cursor-pointer"
+//             />
+//           </a>
+//         </Link>
+
+//         <ul className="hidden md:flex capitalize space-x-4">
+//           <li className="font-bold text-sm hover:text-black active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+//             <Link href="/">Home</Link>
+//           </li>
+//           {/* Other navigation items */}
+//         </ul>
+
+//         <div className="hidden md:flex items-center space-x-4">
+//           <ButtonWhite onClick={handleOrderClick} label="Get started" />
+//           <DarkModeSwitch />
+//         </div>
+
+//         <div onClick={toggleNav} className="md:hidden cursor-pointer">
+//           <AiOutlineMenu size={25} />
+//         </div>
+//       </div>
+
+//       <div
+//         className={`${
+//           nav ? "fixed" : "left-[-100%] ease-out"
+//         } left-0 h-screen top-0 w-full duration-700 bg-white dark:bg-black`}
+//       >
+//         {/* Side Drawer Menu */}
+//         {/* Content for the side drawer */}
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Nav;

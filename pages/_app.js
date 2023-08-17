@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   const noFooter = ["/", "/Signin", "/Signup"];
 
   return (
-    <ThemeProvider defaultTheme="system">
+    <ThemeProvider attribute="class">
       {/* no navabar on both signup and signin page... */}
       {noNav.includes(asPath) ? null : <Nav />}
       <Component {...pageProps} />
