@@ -4,6 +4,7 @@ import image from "../../Assets/images/kw.png";
 import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import ButtonWhite from "../Buttons/ButtonWhite";
+import DarkModeSwitch from "../UI/DarkModeSwitch";
 
 const Nav = ({ children }) => {
   const [nav, setNav] = useState(false);
@@ -38,8 +39,8 @@ const Nav = ({ children }) => {
     <div
       className={
         shadow
-          ? "w-full h-[4rem] border-b shadow-md bg-white duration-1000 easy-in fixed z-[100]"
-          : "fixed w-full h-[5rem] z-[100] bg-white"
+          ? "w-full h-[4rem] border-b shadow-md dark:bg-black duration-1000 easy-in fixed z-[100]"
+          : "fixed w-full h-[5rem] z-[100] dark:bg-black"
       }
     >
       <div className="px-4 py-6 flex w-full justify-between items-center md:justify-around h-full 2xl:px-16">
@@ -81,6 +82,9 @@ const Nav = ({ children }) => {
 
         <div className="hidden md:flex">
           <ButtonWhite onClick={handleOrderClick} label="Get started" />
+          <div className="">
+            <DarkModeSwitch />
+          </div>
         </div>
 
         <div onClick={handClick} className="md:hidden cursor-pointer">
@@ -157,10 +161,17 @@ const Nav = ({ children }) => {
                   <Link href="/contact">Contact</Link>
                 </li>
               </ul>
+              <div className="flex justify-center items-center h-40 w-full">
+                <DarkModeSwitch />
+              </div>
             </div>
 
-            <div className=" bottom-0 sm:bottom-0 absolute py-[6px]  flex items-center flex-grow">
-              <ButtonWhite onClick={handleOrderClick} label="Get started" />
+            <div className="flex-grow bottom-0 sm:bottom-0 absolute flex items-center justify-center w-full">
+              <ButtonWhite
+                onClick={handleOrderClick}
+                label="Get started"
+                className="w-full"
+              />
             </div>
           </div>
         </div>

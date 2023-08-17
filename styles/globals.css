@@ -10,8 +10,6 @@ html {
 
 @layer base {
   body {
-    @apply select-none bg-white dark:bg-black/20;  
+    @apply  dark:bg-black/20;
   }
-
- 
 }

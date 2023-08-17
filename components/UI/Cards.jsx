@@ -24,19 +24,19 @@ const Cards = () => {
   }, []);
 
   return (
-    <div className="h-full sm:py-20 w-full md:flex items-center">
+    <div className="h-full sm:py-20 w-full md:flex items-center  py-20 ">
       <div className="md:w-1/2 flex justify-center items-center">
         <Image
           src={image}
           alt="guys"
           width={400}
           height={400}
-          className="sm:rounded-full "
+          className="rounded-full "
         />
       </div>
 
-      <div className="h-full w-full md:w-1/2 space-y-6 text-center flex flex-col justify-center items-center">
-        <h1 className="sm:text-4xl font-bold text-black text-4xl">
+      <div className="h-full w-full md:w-1/2 space-y-6 text-center flex flex-col justify-center items-center  py-20 sm:py-0">
+        <h1 className="sm:text-4xl font-bold text-4xl">
           Expand your career opportunities
         </h1>
         <p className="max-w-xl text-xl">

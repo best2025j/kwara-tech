@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-[100%] mx-auto h-[80vh] sm:h-[90vh] text-center bg-gradient-to-r from-[#3762f2] to-[#123dcc]">
+    <div className="w-[100%] mx-auto h-[80vh] sm:h-[90vh] text-center bg-gradient-to-r from-[#3762f2] to-[#123dcc] dark:bg-black">
       <div className="w-full h-full mx-auto flex justify-center items-center">
         <div className="animate-in fade-in zoom-in delay-120  duration-700">
           <div className="">
@@ -39,7 +39,7 @@ const Hero = () => {
                 <ButtonDefault
                   onClick={handleOrderClick}
                   label="Search"
-                  className="sm:rounded-l-xl sm:mt-0 mt-2 bg-blue-500"
+                  className="sm:rounded-l-xl sm:mt-0 mt-2 bg-blue-500 text-white"
                 />
               </div>
             </div>
