@@ -7,7 +7,7 @@ const Content = () => {
 
   return (
     <div
-      className={`w-[100%] mx-auto h-[80vh] sm:h-[90vh] text-center ${
+      className={`w-[100%] mx-auto h-[80vh] sm:h-full text-center ${
         isDarkMode
           ? "dark:bg-black"
           : "w-full h-full  text-center bg-gradient-to-b from-[#0e4ee3] to-white  py-20 p-8"
