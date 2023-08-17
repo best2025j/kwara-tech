@@ -2,19 +2,13 @@ import Link from "next/link";
 import image from "../../Assets/images/kw.png";
 
 import React from "react";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaLinkedinIn,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
-
-
-
-
+import fb from "../../Assets/svg/facebooklogo.svg";
+import ig from "../../Assets/svg/ig.svg";
+import Twitter from "../../Assets/svg/Twitterlogo.svg";
+import whatsapp from "../../Assets/svg/whatsapp.svg";
+// import inkedinIn from "../../Assets/svg/whatsapp.svg.]svg";
 
 const Footer = () => {
   return (
@@ -118,30 +112,32 @@ const Footer = () => {
       <div className="flex-col max-w-[1240px] px-2 py-4 m-auto justify-between align-center sm:flex-row border-t flex text-center text-gray-500">
         <p className="py-4">2022 workflow , llc, All rights reserved.</p>
         <div className="flex justify-around sm:w-[360px] pt-4 text-2xl cursor-pointer">
-          <Link href="">
+          <Link href="https://www.facebook.com/kwaratechacademy?mibextid=LQQJ4d">
             <a>
-              <FaFacebook className="text-[#233dfc]" />
+              <Image className="" width={30} height={30} src={fb} />
+            </a>
+          </Link>
+          <Link
+            href="https://instagram.com/kwaratechacademy?igshid=MzRlODBiNWFlZA==
+"
+          >
+            <a>
+              <Image className="" width={30} height={30} src={ig} />
+            </a>
+          </Link>
+          <Link href="https://twitter.com/kwaratech?s=21&t=sYf7NFdQaYs03psUDuFqhQ">
+            <a>
+              <Image className="" width={30} height={30} src={Twitter} />
             </a>
           </Link>
           <Link href="">
             <a>
-              <FaInstagram className="text-[#233dfc]" />
+              <Image className="" width={30} height={30} src={whatsapp} />
             </a>
           </Link>
-          <Link href="">
+          <Link href="https://www.linkedin.com/in/kwara-tech-academy-a774a1244">
             <a>
-              <FaLinkedinIn className="text-[#233dfc]" />
-            </a>
-          </Link>
-          <Link href="">
-            <a>
-              <FaTwitter className="text-[#233dfc]" />
-            </a>
-          </Link>
-
-          <Link href="">
-            <a>
-              <FaYoutube className="text-[#233dfc]" />
+              <FaLinkedinIn className="text-white bg-lightBlue h-8  rounded-md w-8" />
             </a>
           </Link>
         </div>
