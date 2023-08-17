@@ -24,8 +24,10 @@ const Hero = () => {
       <div className="w-full h-full mx-auto flex justify-center items-center">
         <div className="animate-in fade-in zoom-in delay-120 duration-700">
           <div className="">
-            <h1 className="sm:text-4xl pb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#fff] via-yellow-500 to-[#55e022] font-bold text-white text-4xl">
-              Join us today!!!
+            <h1 class="text-4xl pb-4 font-bold text-white">
+              <span class="bg-clip-text text-transparent bg-gradient-to-r from-customGreen via-yellow-500 to-[#55e022]">
+                Join us today!!!
+              </span>
             </h1>
           </div>
           <div className="space-y-6">

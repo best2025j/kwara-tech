@@ -18,7 +18,13 @@ const Nav = ({ children }) => {
   const handleClose = () => setNav(!nav);
 
   return (
-    <div className="w-full h-[4rem] border-b shadow-md bg-white text-black dark:bg-black duration-1000 easy-in fixed z-[100]">
+    <div
+      className={
+        nav
+          ? " bg-white dark:bg-black h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
+          : "dark:bg-black bg-white h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
+      }
+    >
       <div className="px-4 py-6 flex w-full justify-between items-center md:justify-around h-full 2xl:px-16">
         <Link href="#">
           <a>
