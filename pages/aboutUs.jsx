@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import image from "../Assets/images/games.jpg";
 
 const aboutUs = () => {
   return (
