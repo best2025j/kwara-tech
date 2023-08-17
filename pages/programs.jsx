@@ -1,15 +1,17 @@
 import Link from "next/link";
 import React from "react";
-import image from "../Assets/deb.jpg";
-import image1 from "../Assets/paul2.webp";
-import image2 from "../Assets/paul3.jpg";
+// import image from "../Assets/deb.jpg";
+// import image1 from "../Assets/paul2.webp";
+// import image2 from "../Assets/paul3.jpg";
 import Image from "next/image";
 
 const programs = () => {
   return (
     <div className="py-20 p-4 w-full h-full font-serif">
       <div className="w-[100%] mx-auto h-[80vh] md:h-[65vh] flex justify-center items-center text-center bg-gradient-to-r from-[#3762f2] to-[#123dcc] rounded-[1.5rem] sm:rounded-[3rem]">
-        <h1 className="font-bold animate-in fade-in zoom-in delay-120 duration-1000 text-center text-4xl">Kwara Tech Programs</h1>
+        <h1 className="font-bold animate-in fade-in zoom-in delay-120 duration-1000 text-center text-4xl">
+          Kwara Tech Programs
+        </h1>
       </div>
 
       {/* GRID */}
@@ -63,7 +65,7 @@ const programs = () => {
         <div className="py-4 grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5 text-center ">
           <div className="animate-in slide-in-from-left duration-1000">
             <div className="p-2">
-              <Image src={image} alt="/" className="rounded-xl" />
+              {/* <Image src={image} alt="/" className="rounded-xl" /> */}
               <h2 className="font-bold text-xl">Deborah</h2>
             </div>
             {/*  */}
@@ -75,7 +77,7 @@ const programs = () => {
               </div>
               <p className="sm:text-md mx-auto font-bold max:w-[20rem]">
                 <i>
-                &#34;I joined the academy,hoping to learn a few basics about
+                  &#34;I joined the academy,hoping to learn a few basics about
                   computer and i really haven&apos;t been dissappointed. Now i
                   know a lot more than i thought to learn and my appreciation
                   goes to my amazing instructors who are friendly and down to
@@ -83,12 +85,10 @@ const programs = () => {
                 </i>
               </p>
             </div>
-          </div>
-          
-          {" "}
+          </div>{" "}
           <div className="animate-in slide-in-from-top duration-1000">
             <div className="p-2">
-              <Image src={image1} alt="/" className="rounded-xl" />
+              {/* <Image src={image1} alt="/" className="rounded-xl" /> */}
               <h2 className="font-bold text-xl">Isaac</h2>
             </div>
             {/*  */}
@@ -100,19 +100,17 @@ const programs = () => {
               </div>
               <p className="sm:text-md mx-auto font-bold max:w-[20rem]">
                 <i>
-                &#34;Before joining the program, i was intended to learn Database
-                  analysis but on my arriver, i attended the web class once and
-                  thereafter, i suddenly developed a passion for website
-                  designing and its been a experience Learning.&#34;
+                  &#34;Before joining the program, i was intended to learn
+                  Database analysis but on my arriver, i attended the web class
+                  once and thereafter, i suddenly developed a passion for
+                  website designing and its been a experience Learning.&#34;
                 </i>
               </p>
             </div>
-          </div>
-          
-          {" "}
+          </div>{" "}
           <div className="animate-in slide-in-from-right duration-1000">
             <div className="p-2">
-              <Image src={image2} alt="/" className="rounded-xl" />
+              {/* <Image src={image2} alt="/" className="rounded-xl" /> */}
               <h2 className="font-bold text-xl">Stella</h2>
             </div>
             {/*  */}
@@ -124,7 +122,7 @@ const programs = () => {
               </div>
               <p className="sm:text-md mx-auto font-bold max:w-[20rem]">
                 <i>
-                &#34;Before joining the Program, i self-learned front-end Web
+                  &#34;Before joining the Program, i self-learned front-end Web
                   design for the first week and amazingly,i learnt more than i
                   ever self-learnt on my first day in class&#34;
                 </i>

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import ButtonWhite from "../Buttons/ButtonWhite";
 
-const Navbar = ({ children }) => {
+const Nav = ({ children }) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
@@ -169,4 +169,4 @@ const Navbar = ({ children }) => {
   );
 };
 
-export default Navbar;
+export default Nav;
