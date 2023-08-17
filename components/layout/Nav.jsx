@@ -25,7 +25,7 @@ const Nav = ({ children }) => {
           : "dark:bg-black bg-white h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
       }
     >
-      <div className="px-4 py-6 flex w-full justify-between items-center md:justify-around h-full 2xl:px-16">
+      <div className="px-2 py-6 flex w-full justify-between items-center md:justify-around h-full 2xl:px-16">
         <Link href="#">
           <a>
             <Image
@@ -83,7 +83,7 @@ const Nav = ({ children }) => {
         // backdrop color
         className={
           nav
-            ? "md:hidden fixed left-0 bg-slate-700/90 dark:bg-black w-full h-full ease-in duration-500"
+            ? "md:hidden fixed left-0 bg-slate-800/90 dark:bg-black w-full h-full ease-in duration-500"
             : "fixed left-[-100%] h-screen  ease-out duration-700"
         }
       >
