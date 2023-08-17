@@ -35,7 +35,7 @@ const Cards = () => {
         />
       </div>
 
-      <div className="h-full w-full md:w-1/2 space-y-6 text-center flex flex-col justify-center items-center  py-20 sm:py-0">
+      <div className="h-full w-full md:w-1/2 space-y-6 text-center mr-14 flex flex-col justify-center items-center   py-20 sm:py-0">
         <h1 className="sm:text-4xl font-bold text-4xl">
           Expand your career opportunities
         </h1>
