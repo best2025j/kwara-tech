@@ -24,8 +24,8 @@ const Cards = () => {
   }, []);
 
   return (
-    <div className="h-full sm:py-20 w-full md:flex items-center  py-20 ">
-      <div className="md:w-1/2 flex justify-center items-center">
+    <div className="h-full sm:py-20 w-full md:flex items-center py-20 ">
+      <div className="sm:w-1/2 flex justify-center items-center sm:h-96 h-60 w-60 mx-auto">
         <Image
           src={image}
           alt="guys"
