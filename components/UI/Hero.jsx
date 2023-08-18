@@ -40,23 +40,25 @@ const Hero = () => {
               and the best tools
             </p>
             <div className="flex-grow flex items-center justify-center">
-              <div className="relative md:mt-2 sm:space-x-1">
-                <input
-                  type="text"
-                  placeholder="Search for our courses, tutors and tools"
-                  className="sm:pl-14 pl-10 md:w-96 sm:h-10 h-8 w-80 bg-white outline-none rounded md:rounded-l-[22px] md:placeholder:text-base placeholder:text-xs"
-                />
-                <div className="absolute top-[10px] md:top-2 insert-y-0 sm:left-0 left-8 flex items-center pl-4">
-                  <AiOutlineSearch className="text-black/80 sm:h-6 sm:w-6 " />
+              <form action="">
+                <div className="relative md:mt-2 sm:space-x-1">
+                  <input
+                    type="text"
+                    placeholder="Search for our courses, tutors and tools"
+                    className="sm:pl-14 dark:bg-white dark:text-black pl-10 md:w-96 sm:h-10 h-8 w-80  outline-none rounded md:rounded-l-[22px] md:placeholder:text-base placeholder:text-xs"
+                  />
+                  <div className="absolute top-[10px] md:top-2 insert-y-0 sm:left-0 left-8 flex items-center pl-4">
+                    <AiOutlineSearch className="text-black/80 sm:h-6 sm:w-6 " />
+                  </div>
+                  <ButtonDefault
+                    onClick={handleOrderClick}
+                    label="Search"
+                    className={`sm:rounded-l-xl sm:mt-0 mt-2 ${
+                      isDarkMode ? "bg-blue-500" : "bg-blue-500 text-white"
+                    }`}
+                  />
                 </div>
-                <ButtonDefault
-                  onClick={handleOrderClick}
-                  label="Search"
-                  className={`sm:rounded-l-xl sm:mt-0 mt-2 ${
-                    isDarkMode ? "bg-blue-500" : "bg-blue-500 text-white"
-                  }`}
-                />
-              </div>
+              </form>
             </div>
           </div>
         </div>

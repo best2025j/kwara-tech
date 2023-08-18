@@ -40,22 +40,22 @@ const Nav = ({ children }) => {
 
         {/* destop view */}
         <ul className="hidden md:flex capitalize">
-          <li className="pl-2 font-bold text-sm hover:text-black  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+          <li className="pl-2 font-bold text-sm hover:text-black dark:hover:text-blue-500  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/">Home</Link>
           </li>
-          <li className="pl-2 font-bold text-sm hover:text-black  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+          <li className="pl-2 font-bold text-sm hover:text-black dark:hover:text-blue-500  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/ourService">Our services</Link>
           </li>
-          <li className="pl-2 font-bold text-sm hover:text-black  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+          <li className="pl-2 font-bold text-sm hover:text-black dark:hover:text-blue-500  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/blog">Blog</Link>
           </li>
-          <li className="pl-2 font-bold text-sm hover:text-black  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+          <li className="pl-2 font-bold text-sm hover:text-black dark:hover:text-blue-500  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/programs">Programs</Link>
           </li>
-          <li className="pl-2 font-bold text-sm hover:text-black  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+          <li className="pl-2 font-bold text-sm hover:text-black dark:hover:text-blue-500  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/aboutUs">About us</Link>
           </li>
-          <li className="pl-2 font-bold text-sm hover:text-black  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
+          <li className="pl-2 font-bold text-sm hover:text-black dark:hover:text-blue-500  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300">
             <Link href="/contact">Contact</Link>
           </li>
         </ul>

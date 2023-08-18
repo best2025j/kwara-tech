@@ -27,12 +27,14 @@ const contact = () => {
   return (
     <div id="contact" className="w-full lg:h-auto py-20 p-4">
       <div className="w-[100%] mx-auto h-[80vh] md:h-[35vh] flex justify-center items-center text-center bg-gradient-to-r from-[#3762f2] to-[#123dcc] rounded-[1.5rem] sm:rounded-[3rem]">
-        <h1 className="font-bold animate-in fade-in zoom-in delay-120 duration-1000 text-center text-4xl uppercase">contact</h1>
+        <h1 className="font-bold animate-in fade-in zoom-in delay-120 duration-1000 text-center text-4xl uppercase">
+          contact
+        </h1>
       </div>
       {/*  */}
-      <div className="max-w-[1240px] m-auto px-4 pt-16 sm:pt-20 w-full ">
+      <div className="max-w-6xl m-auto px-4 pt-16 sm:pt-20 w-full ">
         <h2 className="py-4 font-serif">Get In Touch</h2>
-        <div className="grid md:grid-cols-5 lg:grid-cols-5 md:gap-4 lg:gap-8">
+        <div className="grid md:grid-cols-5 lg:grid-cols-5 md:gap-4 lg:gap-8 space-y-5 md:space-y-0">
           {/* left */}
           <div className="col-span-3 md:col-span-2 w-full h-full border border-gray-400 rounded-3xl p-4">
             <div className="lg:p-4 h-full">
@@ -61,7 +63,7 @@ const contact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg bg-blue-600 text-white  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="rounded-full shadow-lg bg-blue-600 text-white p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
                     </div>
                   </a>
@@ -71,7 +73,7 @@ const contact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg bg-gradient-to-r from-[#2e2d2d] to-[#16161b] text-white  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="rounded-full shadow-lg bg-gradient-to-r from-[#2e2d2d] to-[#16161b] text-white p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaInstagram />
                     </div>
                   </a>
@@ -81,14 +83,14 @@ const contact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg bg-green-500  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="rounded-full shadow-lg bg-green-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaWhatsapp />
                     </div>
                   </a>
 
                   {/*  */}
                   <a href="https://discord.gg/AHyCM78g">
-                    <div className="rounded-full shadow-lg bg-blue-500  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="rounded-full shadow-lg bg-blue-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaTwitter />
                     </div>
                   </a>
@@ -152,7 +154,10 @@ const contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                   />
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4 bg-[#233dfc]">
+                <button
+                  className="w-full p-4 rounded-md
+                 text-gray-100 mt-4 bg-[#233dfc]"
+                >
                   Send Message
                 </button>
               </form>
