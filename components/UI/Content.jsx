@@ -9,8 +9,8 @@ const Content = () => {
     <div
       className={`w-[100%] mx-auto h-[80vh] sm:h-full text-center ${
         isDarkMode
-          ? "dark:bg-black"
-          : "w-full h-full  text-center bg-gradient-to-b from-[#0e4ee3] to-white  py-20 p-8"
+          ? "dark:bg-black w-full h-full text-center py-20 p-8"
+          : "w-full h-full text-center bg-gradient-to-b from-[#0e4ee3] to-white py-20 p-8"
       }`}
     >
       <div className="max-w-[1240px] w-full h-full mx-auto space-y-4">

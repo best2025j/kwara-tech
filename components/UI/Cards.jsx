@@ -54,7 +54,7 @@ const Cards = () => {
 
         <div className="flex divide-x space-x-4 ">
           {numbers.map((item, index) => (
-            <h1 className="font-extrabold text-5xl pr-2" key={index}>
+            <h1 className="font-extrabold text-5xl pr-2 " key={index}>
               {item.label === "Support"
                 ? Math.min(scrollY, item.count)
                 : Math.min(scrollY < 200 ? 0 : scrollY - 200, item.count)}

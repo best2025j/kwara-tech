@@ -22,7 +22,7 @@ const Nav = ({ children }) => {
       className={
         nav
           ? "bg-white dark:bg-black h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
-          : "dark:bg-black bg-white h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
+          : "dark:bg-black border-b border-white bg-white h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
       }
     >
       <div className="px-2 py-6 flex w-full justify-between items-center md:justify-around h-full 2xl:px-16">
@@ -64,7 +64,7 @@ const Nav = ({ children }) => {
 
         <div className="hidden md:flex items-center justify-center space-y-2 ">
           <div className="">
-            <ButtonWhite onClick={handleOrderClick} label="Get started" className='' />
+            <ButtonWhite onClick={handleOrderClick} label="Get started" />
           </div>
           <div className="">
             <DarkModeSwitch />
@@ -153,11 +153,7 @@ const Nav = ({ children }) => {
             </div>
 
             <div className="bottom-0 sm:bottom-0 absolute flex items-center justify-center w-[80%]">
-              <ButtonWhite
-                onClick={handleOrderClick}
-                label="Get started"
-                className=""
-              />
+              <ButtonWhite onClick={handleOrderClick} label="Get started" />
             </div>
           </div>
         </div>
