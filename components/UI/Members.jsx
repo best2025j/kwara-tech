@@ -11,14 +11,14 @@ const Members = () => {
 
   return (
     <div
-      className={`sm:py-20 my-20 sm:md:flex items-center py-40 dark:border-2 rounded-[3rem] mx-auto h-full md:w-[80%] ${
+      className={`sm:py-20 my-20 sm:md:flex items-center py-40 dark:border-2 rounded-[3rem] mx-auto h-full sm:w-[80%] ${
         isDarkMode
           ? "dark:bg-black"
           : "sm:py-20 my-20 sm:md:flex items-center py-40 bg-gradient-to-b from-blue-500 to-white mx-auto h-full md:w-[80%]"
       }`}
     >
-      <div className="flex-row-reverse sm:flex ">
-        <div className="h-full w-full md:-mt-40 mt-0 animate__backInRight animate__animated">
+      <div className="flex-row-reverse md:flex ">
+        <div className="h-full w-full md:-mt-40 mt-0 ">
           {/* Provide appropriate values for width and height */}
           <Image
             src={image}
@@ -29,11 +29,17 @@ const Members = () => {
           />
         </div>
 
-        <div className="sm:space-y-2 space-y-4 flex justify-center flex-col items-center text-center px-4 max-w-xl ">
-          <h1 className=" text-xl font-bold ">
+        <div className="sm:space-y-2 space-y-4 flex text-center items-center md:text-justify flex-col md:items-start px-4 max-w-xl capitalize">
+          <h1 className="text-xl font-bold ">
             improve yourself in order to be better prepared for the future
           </h1>
-          <h1 className=" text-xl font-bold ">
+          <p className="text-normal text-sm dark:text-blue-300 md:max-w-xl">
+            with kwara-tech academy, you are one step closer to securing your
+            technological future.kwaratech academy puts you ahead of your peer,
+            provides you with real-world knowledge, guarantees jobs, and much
+            more.
+          </p>
+          <h1 className=" text-xl font-medium ">
             Check out our available programs
           </h1>
 
