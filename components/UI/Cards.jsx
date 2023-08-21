@@ -31,6 +31,7 @@ const Cards = () => {
           alt="guys"
           width={400}
           height={400}
+          quality={100}
           className="rounded-full "
         />
       </div>

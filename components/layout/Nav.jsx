@@ -82,9 +82,7 @@ const Nav = ({ children }) => {
       <div
         // backdrop color
         className={
-          nav
-            ? "md:hidden fixed left-0 bg-slate-800/90 dark:bg-black w-full h-full ease-in duration-500"
-            : "fixed left-[-100%] h-screen  ease-out duration-700"
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/80" : ""
         }
       >
         {/* Side Drawer Menu */}
@@ -152,7 +150,7 @@ const Nav = ({ children }) => {
               </div>
             </div>
 
-            <div className="bottom-0 sm:bottom-0 absolute flex items-center justify-center w-[80%]">
+            <div className="bottom-1 sm:bottom-0 absolute flex items-center justify-center w-[80%]">
               <ButtonWhite onClick={handleOrderClick} label="Get started" />
             </div>
           </div>
