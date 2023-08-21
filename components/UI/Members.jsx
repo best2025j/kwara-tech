@@ -11,10 +11,10 @@ const Members = () => {
 
   return (
     <div
-      className={`sm:py-20 my-20 sm:md:flex items-center py-40 dark:border-2 rounded-[3rem] mx-auto h-full sm:w-[80%] ${
+      className={`sm:py-20 my-20 sm:md:flex items-center py-40 dark:border-2 w-[90%] sm:px-0 rounded-[3rem] mx-auto h-full sm:w-[80%] ${
         isDarkMode
           ? "dark:bg-black"
-          : "sm:py-20 my-20 sm:md:flex items-center py-40 bg-gradient-to-b from-blue-500 to-white mx-auto h-full md:w-[80%]"
+          : "sm:py-20 my-20 sm:md:flex items-center py-40 bg-gradient-to-b from-blue-500 to-white mx-auto h-full sm:w-[80%]"
       }`}
     >
       <div className="flex-row-reverse md:flex ">
