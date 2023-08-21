@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer";
 import Hero from "../components/UI/Hero";
 import Nav from "../components/layout/Nav";
 import Members from "../components/UI/Members";
+import Courses from "../components/Courses/Courses";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Cards />
       <Content />
       <Members />
+      <Courses />
       <Footer />
     </>
   );
