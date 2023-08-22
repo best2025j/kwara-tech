@@ -26,7 +26,7 @@ const staffData = [
     name: "Gt",
     position: "Software Engineer",
     image: "/gt1.jpeg",
-    facebook: "https://www.facebook.com/",
+    facebook: "/",
     linkedin: "https://www.linkedin.com/",
     whatsapp: "https://www.whatsapp.com/",
   },
@@ -113,8 +113,8 @@ const Staffs = () => {
   return (
     <section>
       <div className="py-40 h-full w-full">
-        <h1 className="text-4xl font-bold text-center">
-          Our leadership and people
+        <h1 className="sm:text-4xl text-2xl font-bold text-center">
+          Meet The Team and Our Professionals
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-6">
           {staffData.map((item, index) => (
@@ -123,7 +123,7 @@ const Staffs = () => {
               className="justify-center items-center hover:bg-slate-100 rounded-xl p-8 flex dark:bg-slate-800 flex-col"
             >
               <Image
-                className="w-24 h-24 rounded-[120px] mx-auto object-contain"
+                className="w-24 h-24 rounded-full mx-auto object-contain"
                 src={item.image}
                 alt={item.name}
                 quality={100}
