@@ -72,38 +72,38 @@ const staffData = [
     linkedin: "https://www.linkedin.com/in/codelordx",
     whatsapp: "https://wa.me/08129740187",
   },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://wa.me/",
-  },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://wa.me/",
-  },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://wa.me/",
-  },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://wa.me/",
-  },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://wa.me/",
+  // },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://wa.me/",
+  // },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://wa.me/",
+  // },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://wa.me/",
+  // },
   // Add more staff data here...
 ];
 
@@ -140,17 +140,17 @@ const Staffs = () => {
                   </h1>
                   <div className="flex space-x-2 items-center justify-center">
                     <Link href={item.facebook}>
-                      <a>
+                      <a className=" hover:text-lightBlue">
                         <SlSocialFacebook />
                       </a>
                     </Link>
                     <Link href={item.linkedin}>
-                      <a>
+                      <a className=" hover:text-lightBlue">
                         <TiSocialLinkedin />
                       </a>
                     </Link>
                     <Link href={item.whatsapp}>
-                      <a>
+                      <a className=" hover:text-lightBlue">
                         <BsWhatsapp />
                       </a>
                     </Link>
