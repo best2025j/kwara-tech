@@ -1,13 +1,13 @@
 import Link from "next/link";
-import image from "../../Assets/images/kw.png";
+import image from "../../public/assets/images/kw.png";
 
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
-import fb from "../../Assets/svg/facebooklogo.svg";
-import ig from "../../Assets/svg/ig.svg";
-import Twitter from "../../Assets/svg/Twitterlogo.svg";
-import whatsapp from "../../Assets/svg/whatsapp.svg";
+import fb from "../../public/assets/svg/facebooklogo.svg";
+import ig from "../../public/assets/svg/ig.svg";
+import Twitter from "../../public/assets/svg/Twitterlogo.svg";
+import whatsapp from "../../public/assets/svg/whatsapp.svg";
 // import inkedinIn from "../../Assets/svg/whatsapp.svg.]svg";
 
 const Footer = () => {
@@ -83,34 +83,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* SUBSRIBE */}
-
-        {/* <div className="col-span-2 pt-8 md:pt-2">
-          <p className="font-bold md:text-2xl text-base uppercase">
-            Subscribe to our newsletter
-          </p>
-          <p className="py-4">
-            The latest news,articles, and resources, sent to the inbox weekly..
-          </p>
-          <form className="flex flex-col sm:flex-row" action="">
-            <input
-              type="text"
-              className="w-full p-2 mr-4 outline-none rounded-md mb-4"
-              placeholder="enter your email..."
-            />
-            <button className="p-1 px-3 mb-4 border rounded-lg border-white hover:bg-[#264ac4] active:scale-105 duration-300 active:text-[#fff]">
-              Subscribe
-            </button>
-          </form>
-        </div> */}
       </div>
-      {/*  */}
 
       {/* SOCIAL MEDIA LINKS */}
 
       <div className="flex-col max-w-[1240px] px-2 py-4 m-auto justify-between align-center sm:flex-row border-t flex text-center text-gray-500">
-        <p className="py-4">2022 workflow , llc, All rights reserved.</p>
+        <p className="py-4">&copy;2022 kwaratechacademy , All rights reserved.</p>
         <div className="flex justify-around sm:w-[360px] pt-4 text-2xl cursor-pointer">
           <Link href="https://www.facebook.com/kwaratechacademy?mibextid=LQQJ4d">
             <a>
@@ -147,4 +125,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

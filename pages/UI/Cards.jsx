@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import image from "../../public/assets/images/full-shot-smiley.png";
-import ButtonWhite from "../Buttons/ButtonWhite";
+import ButtonWhite from "../../components/Buttons/ButtonWhite";
 
 const Cards = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -57,7 +57,7 @@ const Cards = () => {
           {numbers.map((item, index) => (
             <h1 className="font-extrabold text-5xl pr-2 " key={index}>
               {item.label === "Support"
-                ?`${ Math.min(scrollY, item.count)}h`
+                ? `${Math.min(scrollY, item.count)}h`
                 : Math.min(scrollY < 200 ? 0 : scrollY - 200, item.count)}
             </h1>
           ))}
