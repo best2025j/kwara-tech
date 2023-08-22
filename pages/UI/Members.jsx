@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image"; // Make sure to import from "next/image"
 import image from "../../public/assets/images/feeling-happy-surprised-realizing-solution-idea 1.png";
-import ButtonWhite from "../Buttons/ButtonWhite";
+import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import { useTheme } from "next-themes";
 
 const Members = () => {

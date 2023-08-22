@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import image from "../../Assets/images/kw.png";
+import image from "../../public/assets/images/kw.png";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import ButtonWhite from "../Buttons/ButtonWhite";

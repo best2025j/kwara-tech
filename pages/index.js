@@ -7,6 +7,7 @@ import Nav from "../components/layout/Nav";
 import Members from "../components/UI/Members";
 import Courses from "../components/Courses/Courses";
 import Staffs from "../components/UI/Staffs";
+import Consulting from "../components/UI/Consulting";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Members />
       <Courses />
       <Staffs />
+      <Consulting />
       <Footer />
     </>
   );

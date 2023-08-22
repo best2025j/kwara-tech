@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import lightmode from "../../Assets/svg/Lightmode.svg";
-import darkmode from "../../Assets/svg/Darkmode.svg";
+import lightmode from "../../public/assets/svg/Lightmode.svg";
+import darkmode from "../../public/assets/svg/Darkmode.svg";
 import { useTheme } from "next-themes";
 
 const DarkModeSwitch = () => {
