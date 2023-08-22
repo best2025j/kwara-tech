@@ -45,7 +45,8 @@ const staffData = [
     image: "/ade1.jpeg",
     facebook: "https://www.facebook.com/profile.php?id=100078468232214",
     linkedin: "https://www.linkedin.com/in/ogundiran-adeniyi",
-    whatsapp: " https://wa.me/08145264132",
+    whatsapp: "https://wa.me/08145264132",
+
   },
   {
     name: "Okechukwu Joshua",
@@ -116,19 +117,19 @@ const Staffs = () => {
         <h1 className="sm:text-4xl text-2xl font-bold text-center">
           Meet the Team and Our Professionals
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-6">
+        <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-6 ">
           {staffData.map((item, index) => (
             <div
               key={index}
-              className="justify-center items-center hover:bg-slate-100 rounded-xl p-8 flex dark:bg-slate-800 flex-col"
+              className="justify-center items-center hover:bg-slate-100 rounded-3xl p-8 flex dark:bg-slate-800 flex-col "
             >
               <Image
-                className="w-24 h-24 rounded-full mx-auto object-contain"
+                className="w-24 h-24 md:w-48 md:h-auto rounded-full mx-aut0 object-cover"
                 src={item.image}
                 alt={item.name}
                 quality={100}
-                width={200}
-                height={200}
+                width="384"
+                height="512"
               />
               <div className="flex flex-col justify-center items-center py-4">
                 <div className="font-medium text-center">
