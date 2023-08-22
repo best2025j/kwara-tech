@@ -8,8 +8,8 @@ const Consulting = () => {
   const numbers = [
     { icon: <PiHandPointingLight />, label: "Project", count: 100 },
     { icon: <FaUser />, label: "client", count: 40 },
-    { icon: <FaUser />, label: "Our team", count: 20 },
-    { icon: <FaAward />, label: "awards", count: 76 },
+    { icon: <FaUser />, label: "Our team", count: 12 },
+    { icon: <FaAward />, label: "awards", count: 40 },
   ];
 
   useEffect(() => {
