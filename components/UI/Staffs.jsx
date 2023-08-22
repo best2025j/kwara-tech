@@ -169,7 +169,7 @@ const Staffs = () => {
         </div>
         {/* button */}
         {visibleStaffCount < staffData.length && (
-          <div className="w-full text-center flex justify-center">
+          <div className=" text-center flex justify-center">
             <ButtonWhite
               label="View More"
               className="w-auto text-center mx-auto flex items-center "
