@@ -3,7 +3,7 @@ import { PiHandPointingLight } from "react-icons/pi";
 import { FaUser, FaAward } from "react-icons/fa";
 
 const Consulting = () => {
-  const [scrollY, setScrollY] = useState(100);
+  const [scrollY, setScrollY] = useState(0);
 
   const numbers = [
     { icon: <PiHandPointingLight />, label: "Project", count: 100 },
@@ -27,7 +27,9 @@ const Consulting = () => {
   return (
     <div className="py-20 h-full w-full">
       <div className="flex justify-center items-center flex-col flex-grow space-y-3 ">
-        <h1 className="font-bold text-xl md:text-4xl capitalize">Consulting successes</h1>
+        <h1 className="font-bold text-xl md:text-4xl capitalize">
+          Consulting successes
+        </h1>
         <p className="px-6 sm:px-0 text-xl md:text-2xl sm:font-medium text-center sm:max-w-2xl">
           Sample text. Click to select the text box. Click again or double click
           to start editing the text.
@@ -38,7 +40,7 @@ const Consulting = () => {
           <div
             key={index}
             className={
-              "text-center bg-lightBlue dark:bg-black p-6 flex justify-center items-center flex-col w-full rounded-xl border-2"
+              "text-center bg-lightBlue dark:bg-black p-8 flex justify-center items-center flex-col w-full rounded-xl border-2"
             }
           >
             <div className="text-2xl">{item.icon}</div>
@@ -46,7 +48,7 @@ const Consulting = () => {
             <h1 className="font-extrabold text-5xl">
               {item.label === "Support"
                 ? Math.min(scrollY, item.count)
-                : Math.min(scrollY < 0 ? 100 : scrollY - 100, item.count)}
+                : Math.min(Math.max(scrollY - 100, 0), item.count)}
             </h1>
           </div>
         ))}

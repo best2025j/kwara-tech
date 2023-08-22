@@ -1,13 +1,13 @@
 import Link from "next/link";
-import image from "../../Assets/images/kw.png";
+import image from "../../public/assets/images/kw.png";
 
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
-import fb from "../../Assets/svg/facebooklogo.svg";
-import ig from "../../Assets/svg/ig.svg";
-import Twitter from "../../Assets/svg/Twitterlogo.svg";
-import whatsapp from "../../Assets/svg/whatsapp.svg";
+import fb from "../../public/assets/svg/facebooklogo.svg";
+import ig from "../../public/assets/svg/ig.svg";
+import Twitter from "../../public/assets/svg/Twitterlogo.svg";
+import whatsapp from "../../public/assets/svg/whatsapp.svg";
 // import inkedinIn from "../../Assets/svg/whatsapp.svg.]svg";
 
 const Footer = () => {
