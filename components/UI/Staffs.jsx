@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { SlSocialFacebook } from "react-icons/sl";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { BsWhatsapp } from "react-icons/bs";
 import Link from "next/link";
+import ButtonDefault from "../Buttons/ButtonDefault";
+import ButtonWhite from "../Buttons/ButtonWhite";
 
 const staffData = [
   {
@@ -46,7 +48,6 @@ const staffData = [
     facebook: "https://www.facebook.com/profile.php?id=100078468232214",
     linkedin: "https://www.linkedin.com/in/ogundiran-adeniyi",
     whatsapp: "https://wa.me/08145264132",
-
   },
   {
     name: "Okechukwu Joshua",
@@ -108,28 +109,33 @@ const staffData = [
   // Add more staff data here...
 ];
 
-console.log("staffData.image", staffData.image);
-
 const Staffs = () => {
+  const [visibleStaffCount, setVisibleStaffCount] = useState(4); // Number of initially visible staff members
+
+  const handleViewMore = () => {
+    setVisibleStaffCount(visibleStaffCount + 4); // Increase the visible staff count
+  };
+
   return (
     <section>
       <div className="py-40 h-full w-full">
         <h1 className="sm:text-4xl text-2xl font-bold text-center">
           Meet the Team and Our Professionals
         </h1>
-        <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-6 ">
-          {staffData.map((item, index) => (
+
+        <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-6">
+          {staffData.slice(0, visibleStaffCount).map((item, index) => (
             <div
               key={index}
               className="justify-center items-center hover:bg-slate-100 rounded-3xl p-8 flex dark:bg-slate-800 flex-col "
             >
               <Image
-                className="w-24 h-24 md:w-48 md:h-auto rounded-full mx-aut0 object-cover"
+                className="object-fi h-48 w-96 md:h-auto rounded-full mx-auto"
                 src={item.image}
                 alt={item.name}
                 quality={100}
                 width="384"
-                height="512"
+                height="384"
               />
               <div className="flex flex-col justify-center items-center py-4">
                 <div className="font-medium text-center">
@@ -161,6 +167,16 @@ const Staffs = () => {
             </div>
           ))}
         </div>
+        {/* button */}
+        {visibleStaffCount < staffData.length && (
+          <div className="w-full text-center flex justify-center">
+            <ButtonWhite
+              label="View More"
+              className="w-auto text-center mx-auto flex items-center "
+              onClick={handleViewMore}
+            />
+          </div>
+        )}
       </div>
     </section>
   );
