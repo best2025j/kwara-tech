@@ -31,78 +31,78 @@ const staffData = [
     linkedin: "https://www.linkedin.com/",
     whatsapp: "https://www.whatsapp.com/",
   },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://www.whatsapp.com/",
-  },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://www.whatsapp.com/",
-  },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://www.whatsapp.com/",
-  },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://www.whatsapp.com/",
-  },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://www.whatsapp.com/",
-  },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://www.whatsapp.com/",
-  },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://www.whatsapp.com/",
-  },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://www.whatsapp.com/",
-  },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "/path/to/image2.jpg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://www.whatsapp.com/",
-  },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://www.whatsapp.com/",
+  // },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://www.whatsapp.com/",
+  // },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://www.whatsapp.com/",
+  // },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://www.whatsapp.com/",
+  // },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://www.whatsapp.com/",
+  // },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://www.whatsapp.com/",
+  // },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://www.whatsapp.com/",
+  // },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://www.whatsapp.com/",
+  // },
+  // {
+  //   name: "John Doe",
+  //   position: "Software Engineer",
+  //   image: "/path/to/image2.jpg",
+  //   facebook: "https://www.facebook.com/",
+  //   linkedin: "https://www.linkedin.com/",
+  //   whatsapp: "https://www.whatsapp.com/",
+  // },
   // Add more staff data here...
 ];
 
@@ -123,8 +123,9 @@ const Staffs = () => {
                 className="w-24 h-24 rounded-full mx-auto"
                 src={image}
                 alt={staff.name}
-                width={150}
-                height={150}
+                quality={100}
+                width={80}
+                height={80}
               />
               <div className="flex flex-col justify-center items-center p-3">
                 <div className="font-medium text-center">
