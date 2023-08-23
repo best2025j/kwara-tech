@@ -4,24 +4,26 @@ import image from "../../public/assets/images/full-shot-smiley.png";
 import ButtonWhite from "../Buttons/ButtonWhite";
 
 const Cards = () => {
-  const [scrollY, setScrollY] = useState(0);
-  const numbers = [
-    { label: "Courses", count: 200 },
-    { label: "Tutors", count: 500 },
-    { label: "Support", count: 24 },
-  ];
+  // scrool feuture
+  // const [scrollY, setScrollY] = useState(0);
+  // const numbers = [
+  //   { label: "Courses", count: 200 },
+  //   { label: "Tutors", count: 500 },
+  //   { label: "Support", count: 24 },
+  // ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrollY(window.scrollY);
 
-    window.addEventListener("scroll", handleScroll);
+  //   };
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <div className="h-full sm:py-20 w-full md:flex items-center py-20 ">
@@ -40,28 +42,28 @@ const Cards = () => {
         <h1 className="sm:text-4xl font-bold text-4xl">
           Expand your career opportunities
         </h1>
-        <p className="max-w-xl text-xl">
+        <p className="max-w-md text-xl">
           An easy step by step process to set up your classes, get familiar with
           your tutors, socialize with other students online.
         </p>
 
-        <div className="flex space-x-6 text-[#3762f2]">
+        {/* <div className="flex space-x-6 text-[#3762f2]">
           {numbers.map((item, index) => (
             <h2 className="text-2xl pr-2" key={index}>
               {item.label}
             </h2>
           ))}
-        </div>
+        </div> */}
 
-        <div className="flex divide-x space-x-4 ">
+        {/* <div className="flex divide-x space-x-4 ">
           {numbers.map((item, index) => (
             <h1 className="font-extrabold text-5xl pr-2 " key={index}>
               {item.label === "Support"
-                ?`${ Math.min(scrollY, item.count)}h`
+                ? `${Math.min(scrollY, item.count)}h`
                 : Math.min(scrollY < 200 ? 0 : scrollY - 200, item.count)}
             </h1>
           ))}
-        </div>
+        </div> */}
 
         <div>
           <ButtonWhite label="get started" />

@@ -9,16 +9,16 @@ import ButtonWhite from "../Buttons/ButtonWhite";
 
 const staffData = [
   {
-    name: "Ayobami ",
-    position: "CEO , Kwaratech",
+    name: "  Ayobami OLUDELE ",
+    position: "CEO",
     image: "/mrAyo.jpeg",
     facebook: "https://www.facebook.com/",
     linkedin: "https://www.linkedin.com/",
     whatsapp: "https://wa.me/",
   },
   {
-    name: "Ibrahim.o.OYEBARI",
-    position: "Eexcutive director",
+    name: "Ibrahim.O.OYEBANJI (FIDR,MIPAN)",
+    position: "Executive director",
     image: "/mrIbrahim.jpeg",
     facebook: "https://www.facebook.com/",
     linkedin: "https://www.linkedin.com/",
@@ -52,7 +52,7 @@ const staffData = [
   {
     name: "Okechukwu Joshua",
     position:
-      "Business Executive, Project Manager and Assistant Executive to Kingseed NGO.",
+      "Business Executive, Project Manager and Assistant Executive to CE.",
     image: "/igboman.jpeg",
     facebook: "https://www.facebook.com/",
     linkedin: "https://www.linkedin.com/in/joshua-okechukwu-0970951b9",
@@ -67,46 +67,29 @@ const staffData = [
     whatsapp: "https://wa.me/",
   },
   {
-    name: "John Doe",
+    name: "Abdul-Azeez A. Isa",
     position: "Frontend Engineer",
     image: "/codelord.jpeg",
     facebook: "http://facebook.com/codelordtx",
     linkedin: "https://www.linkedin.com/in/codelordx",
     whatsapp: "https://wa.me/08129740187",
   },
-  // {
-  //   name: "John Doe",
-  //   position: "Software Engineer",
-  //   image: "/path/to/image2.jpg",
-  //   facebook: "https://www.facebook.com/",
-  //   linkedin: "https://www.linkedin.com/",
-  //   whatsapp: "https://wa.me/",
-  // },
-  // {
-  //   name: "John Doe",
-  //   position: "Software Engineer",
-  //   image: "/path/to/image2.jpg",
-  //   facebook: "https://www.facebook.com/",
-  //   linkedin: "https://www.linkedin.com/",
-  //   whatsapp: "https://wa.me/",
-  // },
-  // {
-  //   name: "John Doe",
-  //   position: "Software Engineer",
-  //   image: "/path/to/image2.jpg",
-  //   facebook: "https://www.facebook.com/",
-  //   linkedin: "https://www.linkedin.com/",
-  //   whatsapp: "https://wa.me/",
-  // },
-  // {
-  //   name: "John Doe",
-  //   position: "Software Engineer",
-  //   image: "/path/to/image2.jpg",
-  //   facebook: "https://www.facebook.com/",
-  //   linkedin: "https://www.linkedin.com/",
-  //   whatsapp: "https://wa.me/",
-  // },
-  // Add more staff data here...
+  {
+    name: "JAMES, Moses Sambo",
+    position: "Business Development Manager",
+    image: "/mrSambo2.jpeg",
+    facebook: "http://facebook.com/codelordtx",
+    linkedin: "https://www.linkedin.com/in/codelordx",
+    whatsapp: "https://wa.me/08129740187",
+  },
+  {
+    name: "Orolu Bisi Morenike",
+    position: "Accountant",
+    image: "/acct.jpeg",
+    facebook: "http://facebook.com/codelordtx",
+    linkedin: "https://www.linkedin.com/in/codelordx",
+    whatsapp: "https://wa.me/08129740187",
+  },
 ];
 
 const Staffs = () => {
@@ -130,12 +113,12 @@ const Staffs = () => {
               className="justify-center items-center hover:bg-slate-100 rounded-3xl p-8 flex dark:bg-slate-800 flex-col "
             >
               <Image
-                className="object-fi h-48 w-96 md:h-auto rounded-full mx-auto"
+                className="h-48 w-96 md:h-auto rounded-full mx-auto"
                 src={item.image}
                 alt={item.name}
                 quality={100}
-                width="384"
-                height="384"
+                width="200"
+                height="200"
               />
               <div className="flex flex-col justify-center items-center py-4">
                 <div className="font-medium text-center">
@@ -170,10 +153,13 @@ const Staffs = () => {
         {/* button */}
         {visibleStaffCount < staffData.length && (
           <div className="text-center">
-          <button onClick={handleViewMore} className="bg-blue-500 text-white p-2 px-6 rounded-full">
-            View More
-          </button>
-        </div>
+            <button
+              onClick={handleViewMore}
+              className="bg-blue-500 text-white p-2 px-6 rounded-full"
+            >
+              View More
+            </button>
+          </div>
         )}
       </div>
     </section>

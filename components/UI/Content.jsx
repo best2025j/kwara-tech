@@ -14,7 +14,7 @@ const Content = () => {
       }`}
     >
       <div className="max-w-[1240px] w-full h-full mx-auto space-y-4">
-        <h1 className="sm:text-4xl text-2xl">
+        <h1 className="sm:text-4xl text-2xl sm:py-6">
           Kickstart your tech career with{" "}
           <b className="bg-clip-text text-transparent bg-gradient-to-r from-[#fff] via-yellow-500 to-[#55e022]">
             kwara Tech Academy.
