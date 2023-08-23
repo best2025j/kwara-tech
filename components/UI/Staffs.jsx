@@ -169,13 +169,11 @@ const Staffs = () => {
         </div>
         {/* button */}
         {visibleStaffCount < staffData.length && (
-          <div className="text-center flex justify-center items-center">
-            <ButtonWhite
-              label="View More"
-              className=" w-40 text-center mx-auto flex items-center justify-center"
-              onClick={handleViewMore}
-            />
-          </div>
+          <div className="text-center">
+          <button onClick={handleViewMore} className="bg-blue-500 text-white p-2 px-6 rounded-full">
+            View More
+          </button>
+        </div>
         )}
       </div>
     </section>
