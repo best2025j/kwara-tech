@@ -49,7 +49,7 @@ const Courses = () => {
             <h2 className="font-bold uppercase">Design</h2>
             <ul className="space-y-3 capitalize">
               <li>UI/UX Design</li>
-              <li>Grapgic Design</li>
+              <li>Graphic Design</li>
               <li>Branding</li>
             </ul>
           </div>
@@ -59,6 +59,7 @@ const Courses = () => {
               <li>content creation</li>
               <li>Blog editing</li>
               <li>Content strategy</li>
+              <li>Content marketing / SCO</li>
             </ul>
           </div>
         </div>
