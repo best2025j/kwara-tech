@@ -1,13 +1,12 @@
 import Link from "next/link";
-import image from "../../public/assets/images/kw.png";
-
+import image from "../../assets/images/kw.png";
 import React from "react";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
-import fb from "../../public/assets/svg/facebooklogo.svg";
-import ig from "../../public/assets/svg/ig.svg";
-import Twitter from "../../public/assets/svg/Twitterlogo.svg";
-import whatsapp from "../../public/assets/svg/whatsapp.svg";
+import fb from "../../assets/svg/facebooklogo.svg";
+import ig from "../../assets/svg/ig.svg";
+import Twitter from "../../assets/svg/Twitterlogo.svg";
+import whatsapp from "../../assets/svg/whatsapp.svg";
 // import inkedinIn from "../../Assets/svg/whatsapp.svg.]svg";
 
 const Footer = () => {
@@ -64,7 +63,7 @@ const Footer = () => {
                 <a>
                   <Image
                     src={image}
-                    alt="/"
+                    alt="image must be seen"
                     width="150px"
                     height="138px"
                     className="cursor-pointer"
@@ -88,11 +87,18 @@ const Footer = () => {
       {/* SOCIAL MEDIA LINKS */}
 
       <div className="flex-col max-w-[1240px] px-2 py-4 m-auto justify-between align-center sm:flex-row border-t flex text-center text-gray-500">
-        <p className="py-4">&copy;2022 kwaratechacademy , All rights reserved.</p>
+        <p className="py-4">
+          &copy;2022 kwaratechacademy , All rights reserved.
+        </p>
         <div className="flex justify-around sm:w-[360px] pt-4 text-2xl cursor-pointer">
           <Link href="https://www.facebook.com/kwaratechacademy?mibextid=LQQJ4d">
             <a>
-              <Image className="" width={30} height={30} src={fb} />
+              <Image
+                className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
+                width={30}
+                height={30}
+                src={fb}
+              />
             </a>
           </Link>
           <Link
@@ -100,22 +106,45 @@ const Footer = () => {
 "
           >
             <a>
-              <Image className="" width={30} height={30} src={ig} />
+              <Image
+                className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
+                width={30}
+                height={30}
+                src={ig}
+              />
             </a>
           </Link>
           <Link href="https://twitter.com/kwaratech?s=21&t=sYf7NFdQaYs03psUDuFqhQ">
             <a>
-              <Image className="" width={30} height={30} src={Twitter} />
+              <Image
+                className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
+                width={30}
+                height={30}
+                src={Twitter}
+              />
             </a>
           </Link>
-          <Link href="">
+
+          <Link href="https://wa.me/07011198112">
             <a>
-              <Image className="" width={30} height={30} src={whatsapp} />
+              <Image
+                className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
+                width={30}
+                height={30}
+                src={whatsapp}
+              />
             </a>
           </Link>
+
+          <Link href="https://www.facebook.com/kwaratechacademy?mibextid=LQQJ4d">
+            <a>
+              <FaFacebook className="text-white bg-lightBlue h-8  rounded-full w-8 cursor-pointer hover:scale-110 ease-in duration-300 p-1" />
+            </a>
+          </Link>
+
           <Link href="https://www.linkedin.com/in/kwara-tech-academy-a774a1244">
             <a>
-              <FaLinkedinIn className="text-white bg-lightBlue h-8  rounded-md w-8" />
+              <FaLinkedinIn className="text-white bg-lightBlue h-8  rounded-full p-1 w-8 cursor-pointer hover:scale-110 ease-in duration-300" />
             </a>
           </Link>
         </div>

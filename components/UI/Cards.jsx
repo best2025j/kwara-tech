@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import image from "../../public/assets/images/full-shot-smiley.png";
+import image from "../../assets/images/full-shot-smiley.png";
 import ButtonWhite from "../Buttons/ButtonWhite";
 
 const Cards = () => {
@@ -66,7 +66,7 @@ const Cards = () => {
         </div> */}
 
         <div>
-          <ButtonWhite label="get started" />
+          <ButtonWhite label="get started" className='hover:scale-105 ease-out  duration-300'/>
         </div>
       </div>
     </div>

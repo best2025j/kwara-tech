@@ -1,28 +1,21 @@
 import Link from "next/link";
 import React from "react";
-// import image from "../Assets/deb.jpg";
-// import image1 from "../Assets/paul2.webp";
-// import image2 from "../Assets/paul3.jpg";
-import Image from "next/image";
+
+import ProgramsLayout from "../components/Programs/ProgramsLayout";
 
 const programs = () => {
   return (
-    <div className="py-20 p-4 w-full h-full font-serif">
-      <div className="w-[100%] mx-auto h-[80vh] md:h-[65vh] flex justify-center items-center text-center bg-gradient-to-r from-[#3762f2] to-[#123dcc] rounded-[1.5rem] sm:rounded-[3rem]">
-        <h1 className="font-bold animate-in fade-in zoom-in delay-120 duration-1000 text-center text-4xl">
-          Kwara Tech Programs
+    <div className="py-20 w-[85%] sm:w-full sm:mx-auto mx-auto h-full font-serif">
+      <div className="w-[90%] shadow-md dark:shadow-white shadow-black mx-auto h-[80vh] md:h-[35vh] flex justify-center items-center text-center dark:bg-black rounded-[1.5rem] sm:rounded-[3rem]">
+        <h1 className="font-bold animate-in fade-in zoom-in delay-120 duration-1000 text-center sm:text-4xl text-xl p-4 tracking-wide">
+          Kwara tech programs open for applications
         </h1>
       </div>
 
       {/* GRID */}
-      <div className="px-4">
-        <p className="sm:text-2xl font-bold tracking-wide text-center">
-          Kwara tech programs open for applications
-        </p>
-
+      <div className="px-4 space-y-4 py-6">
         <div className="py-4 animate-in slide-in-from-top duration-700 grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-3 text-center ">
-          {/*  */}
-          <div className="border-2  rounded-xl duration-300 hover:bg-green-500 hover:text-white active:scale-105 active:text-black bg-blue-500 mx-auto flex justify-center items-center h-40 w-full">
+          <div className="border-2  rounded-xl duration-3030 hover:bg-green-500 hover:text-white active:scale-105 active:text-black bg-blue-500 mx-auto flex justify-center items-center h-80 w-full">
             <Link href="/bootcamp">
               <a>
                 <h4 className="font-bold">Coding Bootcamp for Kids</h4>
@@ -31,8 +24,9 @@ const programs = () => {
                 </p>
               </a>
             </Link>
-          </div>{" "}
-          <div className="border-2 rounded-xl duration-300 hover:bg-slate-500 hover:text-white active:scale-105 active:text-black bg-yellow-500 mx-auto flex justify-center items-center h-40 w-full">
+          </div>
+
+          <div className="border-2 rounded-3xl duration-300 hover:bg-slate-500 hover:text-white active:scale-105 active:text-black bg-yellow-500 mx-auto flex justify-center items-center h-80 w-full">
             <Link href="/bootcamp">
               <a>
                 <h4 className="font-bold">Professional IT Training</h4>
@@ -41,8 +35,9 @@ const programs = () => {
                 </p>
               </a>
             </Link>
-          </div>{" "}
-          <div className="border-2 rounded-xl duration-300 hover:bg-red-500 hover:text-white active:scale-105 active:text-black bg-green-400 mx-auto flex justify-center items-center h-40 w-full">
+          </div>
+
+          <div className="border-2 rounded-3xl duration-300 hover:bg-red-500 hover:text-white active:scale-105 active:text-black bg-green-400 mx-auto flex justify-center items-center h-80 w-full">
             <Link href="/bootcamp">
               <a>
                 <h4 className="font-bold">
@@ -57,8 +52,10 @@ const programs = () => {
         </div>
 
         {/* TESTIMONY */}
-        <div className="py-6">
-          <h1 className="text-2xl font-bold">Student Testimonies:</h1>
+        <div className="py-10">
+          <h1 className="text-2xl font-bold text-center">
+            Student Testimonies:
+          </h1>
         </div>
 
         {/*  */}
@@ -68,7 +65,7 @@ const programs = () => {
               {/* <Image src={image} alt="/" className="rounded-xl" /> */}
               <h2 className="font-bold text-xl">Deborah</h2>
             </div>
-            {/*  */}
+
             <div className="space-y-4">
               <div className="text-xl">
                 <h1 className="font-extrabold text-blue-500">
@@ -85,13 +82,14 @@ const programs = () => {
                 </i>
               </p>
             </div>
-          </div>{" "}
+          </div>
+
           <div className="animate-in slide-in-from-top duration-1000">
             <div className="p-2">
               {/* <Image src={image1} alt="/" className="rounded-xl" /> */}
               <h2 className="font-bold text-xl">Isaac</h2>
             </div>
-            {/*  */}
+
             <div className=" space-y-4">
               <div className="text-xl">
                 <h1 className="font-extrabold text-blue-500">
@@ -107,13 +105,14 @@ const programs = () => {
                 </i>
               </p>
             </div>
-          </div>{" "}
+          </div>
+
           <div className="animate-in slide-in-from-right duration-1000">
             <div className="p-2">
               {/* <Image src={image2} alt="/" className="rounded-xl" /> */}
               <h2 className="font-bold text-xl">Stella</h2>
             </div>
-            {/*  */}
+
             <div className=" space-y-4">
               <div className="text-xl">
                 <h1 className="font-extrabold text-blue-500">
@@ -131,6 +130,9 @@ const programs = () => {
           </div>
         </div>
       </div>
+
+      {/* tech for coppers */}
+      <ProgramsLayout />
     </div>
   );
 };

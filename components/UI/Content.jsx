@@ -21,7 +21,6 @@ const Content = () => {
           </b>
         </h1>
 
-        {/*  */}
         <p className="font-medium text-lg">
           We are on a mission to empower young passionate tech innovators round
           the globe, helping them to build qualitative and high-paying tech
@@ -30,13 +29,10 @@ const Content = () => {
           opportunities.
         </p>
 
-        {/*  */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-5 text-center ">
-          {/*  */}
-          <div className="border-2  rounded-xl duration-300 hover:bg-green-500 hover:text-white active:scale-105 active:text-black bg-blue-500 mx-auto flex justify-center items-center h-60 w-full">
+          <div className="border-2 rounded-xl hover:scale-105 ease-in  duration-300 hover:bg-green-500 hover:text-white active:scale-105 active:text-black bg-blue-500 mx-auto flex justify-center items-center h-60 w-full">
             {/* <div className="p-4"></div> */}
 
-            {/*  */}
             <div className=" space-y-4">
               <div className="text-base">
                 <h1 className="font-bold">Acquire In-demand Skills </h1>
@@ -47,11 +43,10 @@ const Content = () => {
               </p>
             </div>
           </div>
-          {/*  */}
-          <div className="border-2 rounded-xl duration-300 hover:bg-red-500 hover:text-white active:scale-105 active:text-black bg-green-400 mx-auto flex justify-center items-center h-60 w-full">
+
+          <div className="border-2 rounded-xl hover:scale-105 ease-in  duration-300 hover:bg-red-500 hover:text-white active:scale-105 active:text-black bg-green-400 mx-auto flex justify-center items-center h-60 w-full">
             {/* <div className="p-4"></div> */}
 
-            {/*  */}
             <div className=" space-y-4">
               <div className="text-base">
                 <h1 className="font-bold">Step Up Your Careers In Game</h1>
@@ -62,10 +57,10 @@ const Content = () => {
               </p>
             </div>
           </div>
-          {/*  */}
-          <div className="border-2 rounded-xl duration-300 hover:bg-slate-500 hover:text-white active:scale-105 active:text-black bg-yellow-500 mx-auto flex justify-center items-center h-60 w-full">
+
+          <div className="border-2 rounded-xl hover:scale-105 ease-in  duration-300 hover:bg-slate-500 hover:text-white active:scale-105 active:text-black bg-yellow-500 mx-auto flex justify-center items-center h-60 w-full">
             {/* <div className="p-4"></div> */}
-            {/*  */}
+
             <div className=" space-y-4">
               <div className="text-base">
                 <h1 className="font-bold">Get Certified</h1>
@@ -76,10 +71,10 @@ const Content = () => {
               </p>
             </div>
           </div>
-          {/*  */}
-          <div className="border-2  rounded-xl duration-300 hover:bg-green-500 hover:text-white active:scale-105 active:text-black bg-blue-500 mx-auto flex justify-center items-center h-60 w-full">
+
+          <div className="border-2 rounded-xl hover:scale-105 ease-in  duration-300 hover:bg-green-500 hover:text-white active:scale-105 active:text-black bg-blue-500 mx-auto flex justify-center items-center h-60 w-full">
             {/* <div className="p-4"></div> */}
-            {/*  */}
+
             <div className=" space-y-4">
               <div className="text-base">
                 <h1 className="font-bold">Upskill Your Team</h1>

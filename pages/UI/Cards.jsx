@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import image from "../../public/assets/images/full-shot-smiley.png";
+import image from "../../assets/images/full-shot-smiley.png";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 
 const Cards = () => {

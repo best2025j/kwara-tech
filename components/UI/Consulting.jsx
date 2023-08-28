@@ -40,7 +40,7 @@ const Consulting = () => {
           <div
             key={index}
             className={
-              "text-center bg-lightBlue dark:bg-black p-8 flex justify-center items-center flex-col w-full rounded-xl border-2"
+              "text-center bg-[#417de5] dark:bg-black p-8 flex justify-center items-center flex-col w-full rounded-xl border-2 hover:scale-105 ease-in  duration-300"
             }
           >
             <div className="text-2xl">{item.icon}</div>

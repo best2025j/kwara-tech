@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image"; // Make sure to import from "next/image"
-import image from "../../public/assets/images/feeling-happy-surprised-realizing-solution-idea 1.png";
+import image from "../../assets/images/feeling-happy-surprised-realizing-solution-idea 1.png";
 import ButtonWhite from "../Buttons/ButtonWhite";
 import { useTheme } from "next-themes";
 
@@ -11,10 +11,10 @@ const Members = () => {
 
   return (
     <div
-      className={`sm:py-20 my-20 sm:md:flex items-center py-40 dark:border-2 w-[90%] sm:px-0 rounded-[3rem] mx-auto h-screen sm:h-full sm:w-[80%] ${
+      className={`sm:py-20 my-20 sm:md:flex items-center py-10 dark:border-2 w-[90%] sm:px-0 rounded-[3rem] mx-auto h-full sm:w-[80%] ${
         isDarkMode
           ? "dark:bg-black"
-          : "sm:py-20 my-20 sm:md:flex items-center py-40 bg-gradient-to-b from-blue-500 to-white mx-auto h-full sm:w-[80%]"
+          : "sm:py-20 my-20 sm:md:flex items-center py-10 bg-gradient-to-b from-blue-500 to-white mx-auto h-full sm:w-[80%]"
       }`}
     >
       <div className="flex-row-reverse md:flex ">

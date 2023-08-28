@@ -8,6 +8,7 @@ import Members from "../components/UI/Members";
 import Courses from "../components/Courses/Courses";
 import Staffs from "../components/UI/Staffs";
 import Consulting from "../components/UI/Consulting";
+import ProgramsLayout from "../components/Programs/ProgramsLayout";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Courses />
       <Staffs />
       <Consulting />
+      <ProgramsLayout />
       <Footer />
     </>
   );

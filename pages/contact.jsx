@@ -1,13 +1,14 @@
 import Image from "next/image";
 // import React, { useState } from "react";
 import {
+  FaFacebook,
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
 // import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import ContactImg from "../public/assets/images/contact.jpg";
+import ContactImg from "../assets/images/contact.jpg";
 
 const contact = () => {
   // const [name, setName] = useState("");
@@ -40,7 +41,7 @@ const contact = () => {
             <div className="lg:p-4 h-full">
               <div>
                 <Image
-                  className="rounded-xl hover:scale-105 ease-in  duration-300"
+                  className="rounded-xl hover:scale-105 ease-in duration-300"
                   src={ContactImg}
                   alt="/"
                 />
@@ -55,11 +56,12 @@ const contact = () => {
                   sit aliquid sed illum consequatur. Enim, explicabo.
                 </p>
               </div>
+
               <div>
                 <p className="uppercase pt-8">Connect With us on</p>
                 <div className="flex items-center justify-between py-3">
                   <a
-                    href="https://www.linkedin.com/in/audu-godstime"
+                    href="https://www.linkedin.com/in/kwara-tech-academy-a774a1244"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -67,9 +69,17 @@ const contact = () => {
                       <FaLinkedinIn />
                     </div>
                   </a>
-
                   <a
-                    href="https://github.com/best2025j"
+                    href="https://www.facebook.com/kwaratechacademy?mibextid=LQQJ4d"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg bg-blue-600 text-white p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaFacebook />
+                    </div>
+                  </a>
+                  <a
+                    href="https://instagram.com/kwaratechacademy?igshid=MzRlODBiNWFlZA=="
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -77,9 +87,8 @@ const contact = () => {
                       <FaInstagram />
                     </div>
                   </a>
-
                   <a
-                    href="https://wa.me/09012902537"
+                    href="https://wa.me/07011198112"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -87,9 +96,8 @@ const contact = () => {
                       <FaWhatsapp />
                     </div>
                   </a>
-
                   {/*  */}
-                  <a href="https://discord.gg/AHyCM78g">
+                  <a href="https://twitter.com/kwaratech?s=21&t=sYf7NFdQaYs03psUDuFqhQ">
                     <div className="rounded-full shadow-lg bg-blue-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaTwitter />
                     </div>

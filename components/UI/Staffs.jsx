@@ -25,6 +25,22 @@ const staffData = [
     whatsapp: "https://wa.me/",
   },
   {
+    name: "JAMES, Moses Sambo",
+    position: "Business Development Manager",
+    image: "/mrSambo2.jpeg",
+    facebook: "http://facebook.com/codelordtx",
+    linkedin: "https://www.linkedin.com/in/codelordx",
+    whatsapp: "https://wa.me/08129740187",
+  },
+  {
+    name: "Orolu Bisi Morenike",
+    position: "Accountant/HRM",
+    image: "/acct.jpeg",
+    facebook: "http://facebook.com/codelordtx",
+    linkedin: "https://www.linkedin.com/in/codelordx",
+    whatsapp: "https://wa.me/08129740187",
+  },
+  {
     name: "Gt",
     position: "Software Engineer",
     image: "/gt1.jpeg",
@@ -74,22 +90,6 @@ const staffData = [
     linkedin: "https://www.linkedin.com/in/codelordx",
     whatsapp: "https://wa.me/08129740187",
   },
-  {
-    name: "JAMES, Moses Sambo",
-    position: "Business Development Manager",
-    image: "/mrSambo2.jpeg",
-    facebook: "http://facebook.com/codelordtx",
-    linkedin: "https://www.linkedin.com/in/codelordx",
-    whatsapp: "https://wa.me/08129740187",
-  },
-  {
-    name: "Orolu Bisi Morenike",
-    position: "Accountant",
-    image: "/acct.jpeg",
-    facebook: "http://facebook.com/codelordtx",
-    linkedin: "https://www.linkedin.com/in/codelordx",
-    whatsapp: "https://wa.me/08129740187",
-  },
 ];
 
 const Staffs = () => {
@@ -101,16 +101,16 @@ const Staffs = () => {
 
   return (
     <section>
-      <div className="py-40 h-full w-full">
+      <div className="py-40 h-full w-[85%] mx-auto sm:mx-0 sm:w-full">
         <h1 className="sm:text-4xl text-2xl font-bold text-center">
           Meet the Team and Our Professionals
         </h1>
 
-        <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-6">
+        <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-6">
           {staffData.slice(0, visibleStaffCount).map((item, index) => (
             <div
               key={index}
-              className="justify-center items-center hover:bg-slate-100 rounded-3xl p-8 flex dark:bg-slate-800 flex-col "
+              className="justify-center items-center hover:bg-slate-100 rounded-3xl p-8 flex hover:scale-105 ease-in  duration-300 dark:bg-slate-800 flex-col "
             >
               <Image
                 className="h-48 w-96 md:h-auto rounded-full mx-auto"
