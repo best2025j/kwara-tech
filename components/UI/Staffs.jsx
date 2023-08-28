@@ -12,83 +12,83 @@ const staffData = [
     name: "  Ayobami OLUDELE ",
     position: "CEO",
     image: "/mrAyo.jpeg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://wa.me/",
+    // facebook: "https://www.facebook.com/",
+    // linkedin: "https://www.linkedin.com/",
+    // whatsapp: "https://wa.me/",
   },
   {
     name: "Ibrahim.O.OYEBANJI (FIDR,MIPAN)",
     position: "Executive director",
     image: "/mrIbrahim.jpeg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://wa.me/",
+    // facebook: "https://www.facebook.com/",
+    // linkedin: "https://www.linkedin.com/",
+    // whatsapp: "https://wa.me/",
   },
   {
     name: "JAMES, Moses Sambo",
     position: "Business Development Manager",
     image: "/mrSambo2.jpeg",
-    facebook: "http://facebook.com/codelordtx",
-    linkedin: "https://www.linkedin.com/in/codelordx",
-    whatsapp: "https://wa.me/08129740187",
+    // facebook: "http://facebook.com/codelordtx",
+    // linkedin: "https://www.linkedin.com/in/codelordx",
+    // whatsapp: "https://wa.me/08129740187",
   },
   {
     name: "Orolu Bisi Morenike",
     position: "Accountant/HRM",
     image: "/acct.jpeg",
-    facebook: "http://facebook.com/codelordtx",
-    linkedin: "https://www.linkedin.com/in/codelordx",
-    whatsapp: "https://wa.me/08129740187",
+    // facebook: "http://facebook.com/codelordtx",
+    // linkedin: "https://www.linkedin.com/in/codelordx",
+    // whatsapp: "https://wa.me/08129740187",
   },
   {
     name: "Gt",
     position: "Software Engineer",
     image: "/gt1.jpeg",
-    facebook: "/",
-    linkedin: "https://www.linkedin.com/in/audu-godstime",
-    whatsapp: "https://wa.me/09012902537",
+    // facebook: "/",
+    // linkedin: "https://www.linkedin.com/in/audu-godstime",
+    // whatsapp: "https://wa.me/09012902537",
   },
 
   {
     name: "Victor Olumati Ajayi",
     position: " Media Director/ Graphics Designer",
     image: "/vic.jpeg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://wa.me/09012902537",
+    // facebook: "https://www.facebook.com/",
+    // linkedin: "https://www.linkedin.com/",
+    // whatsapp: "https://wa.me/09012902537",
   },
   {
     name: "Adeniyi Ogundiran",
     position: "Business Development Executive / Digital Marketing instructor",
     image: "/ade1.jpeg",
-    facebook: "https://www.facebook.com/profile.php?id=100078468232214",
-    linkedin: "https://www.linkedin.com/in/ogundiran-adeniyi",
-    whatsapp: "https://wa.me/08145264132",
+    // facebook: "https://www.facebook.com/profile.php?id=100078468232214",
+    // linkedin: "https://www.linkedin.com/in/ogundiran-adeniyi",
+    // whatsapp: "https://wa.me/08145264132",
   },
   {
     name: "Okechukwu Joshua",
     position:
       "Business Executive, Project Manager and Assistant Executive to CE.",
     image: "/igboman.jpeg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/in/joshua-okechukwu-0970951b9",
-    whatsapp: "https://wa.me/08131614690",
+    // facebook: "https://www.facebook.com/",
+    // linkedin: "https://www.linkedin.com/in/joshua-okechukwu-0970951b9",
+    // whatsapp: "https://wa.me/08131614690",
   },
   {
     name: "Ogundiran Moshood Adeniyi",
     position: "Busines Development Executive and Digital Marketing Instructor",
     image: "/vercel.svg",
-    facebook: "https://www.facebook.com/",
-    linkedin: "https://www.linkedin.com/",
-    whatsapp: "https://wa.me/",
+    // facebook: "https://www.facebook.com/",
+    // linkedin: "https://www.linkedin.com/",
+    // whatsapp: "https://wa.me/",
   },
   {
     name: "Abdul-Azeez A. Isa",
     position: "Frontend Engineer",
     image: "/codelord.jpeg",
-    facebook: "http://facebook.com/codelordtx",
-    linkedin: "https://www.linkedin.com/in/codelordx",
-    whatsapp: "https://wa.me/08129740187",
+    // facebook: "http://facebook.com/codelordtx",
+    // linkedin: "https://www.linkedin.com/in/codelordx",
+    // whatsapp: "https://wa.me/08129740187",
   },
 ];
 
@@ -128,7 +128,7 @@ const Staffs = () => {
                   <h1 className="text-slate-700 dark:text-slate-500">
                     {item.position}
                   </h1>
-                  <div className="flex space-x-2 items-center justify-center">
+                  {/* <div className="flex space-x-2 items-center justify-center">
                     <Link href={item.facebook}>
                       <a className=" hover:text-lightBlue">
                         <SlSocialFacebook />
@@ -144,7 +144,7 @@ const Staffs = () => {
                         <BsWhatsapp />
                       </a>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

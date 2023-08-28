@@ -5,7 +5,7 @@ import Testimonies from "../components/UI/Testimonies";
 
 const programs = () => {
   return (
-    <div className="py-20 w-[85%] sm:w-full sm:mx-auto mx-auto h-full font-serif">
+    <div className="py-20  sm:w-full sm:mx-auto mx-auto h-full font-serif">
       <div className="w-[90%] shadow-md dark:shadow-white shadow-black mx-auto h-[80vh] md:h-[35vh] flex justify-center items-center text-center dark:bg-black rounded-[1.5rem] sm:rounded-[3rem]">
         <h1 className="font-bold animate-in fade-in zoom-in delay-120 duration-1000 text-center sm:text-4xl text-xl p-4 tracking-wide">
           Kwara tech programs open for applications
