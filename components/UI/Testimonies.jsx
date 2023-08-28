@@ -5,7 +5,7 @@ import { IconArrowRight, IconArrowLeft } from "@tabler/icons-react";
 const Testimonies = () => {
   return (
     <section>
-      <div className="flex h-[400px">
+      <div className="flex h-[1000px]">
         <Carousel
           maw={700}
           mx="auto"
@@ -29,7 +29,7 @@ const Testimonies = () => {
                     Web Developer and Graphics Designer
                   </h1>
                 </div>
-                <p className="sm:text-base mx-auto font-bold max:w-[20rem]">
+                <p className="mx-auto  max:w-[20rem]">
                   <i>
                     &#34;I joined the academy,hoping to learn a few basics about
                     computer and i really haven&apos;t been dissappointed. Now i
@@ -56,7 +56,7 @@ const Testimonies = () => {
                     Snr Web Developer and Database Analyst
                   </h1>
                 </div>
-                <p className="sm:text-base mx-auto font-bold max:w-[20rem]">
+                <p className="mx-auto  max:w-[20rem]">
                   <i>
                     &#34;Before joining the program, i was intended to learn
                     Database analysis but on my arriver, i attended the web
@@ -83,7 +83,7 @@ const Testimonies = () => {
                     Web Developer and Content Creator
                   </h1>
                 </div>
-                <p className="sm:text-base mx-auto font-bold max:w-[20rem]">
+                <p className="mx-auto  max:w-[20rem]">
                   <i>
                     &#34;Before joining the Program, i self-learned front-end
                     Web design for the first week and amazingly,i learnt more
