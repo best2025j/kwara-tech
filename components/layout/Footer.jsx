@@ -94,6 +94,7 @@ const Footer = () => {
           <Link href="https://www.facebook.com/kwaratechacademy?mibextid=LQQJ4d">
             <a>
               <Image
+                alt="no image"
                 className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
                 width={30}
                 height={30}
@@ -107,6 +108,7 @@ const Footer = () => {
           >
             <a>
               <Image
+                alt="no image"
                 className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
                 width={30}
                 height={30}
@@ -117,6 +119,7 @@ const Footer = () => {
           <Link href="https://twitter.com/kwaratech?s=21&t=sYf7NFdQaYs03psUDuFqhQ">
             <a>
               <Image
+                alt="no image"
                 className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
                 width={30}
                 height={30}
@@ -128,6 +131,7 @@ const Footer = () => {
           <Link href="https://wa.me/07011198112">
             <a>
               <Image
+                alt="no image"
                 className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
                 width={30}
                 height={30}

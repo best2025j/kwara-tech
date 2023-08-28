@@ -11,7 +11,7 @@ const blog = () => {
 
       <div className="">
         <h1>
-          Cybersecurity has become increasingly important in today's digital
+          Cybersecurity has become increasingly important in today&apos; digital
           age, as more and more of our personal and sensitive information is
           stored online.
         </h1>
