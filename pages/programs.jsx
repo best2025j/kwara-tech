@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 import ProgramsLayout from "../components/Programs/ProgramsLayout";
+import Testimonies from "../components/UI/Testimonies";
 
 const programs = () => {
   return (
@@ -57,12 +58,20 @@ const programs = () => {
             Student Testimonies:
           </h1>
         </div>
+        <Testimonies />
 
-        {/*  */}
-        <div className="py-4 grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5 text-center ">
-          <div className="animate-in slide-in-from-left duration-1000">
+        <ProgramsLayout />
+      </div>
+    </div>
+  );
+};
+
+export default programs;
+
+
+  {/* <div className="py-4 grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5 text-center">
+          <div className="animate-in slide-in-from-left duration-1000 section">
             <div className="p-2">
-              {/* <Image src={image} alt="/" className="rounded-xl" /> */}
               <h2 className="font-bold text-xl">Deborah</h2>
             </div>
 
@@ -82,59 +91,131 @@ const programs = () => {
                 </i>
               </p>
             </div>
-          </div>
 
-          <div className="animate-in slide-in-from-top duration-1000">
-            <div className="p-2">
-              {/* <Image src={image1} alt="/" className="rounded-xl" /> */}
-              <h2 className="font-bold text-xl">Isaac</h2>
-            </div>
-
-            <div className=" space-y-4">
-              <div className="text-xl">
-                <h1 className="font-extrabold text-blue-500">
-                  Snr Web Developer and Database Analyst
-                </h1>
+            {/* < className="animate-in slide-in-from-top duration-1000 section hidden">
+              <div className="p-2">
+                <h2 className="font-bold text-xl">Deborah</h2>
               </div>
-              <p className="sm:text-md mx-auto font-bold max:w-[20rem]">
-                <i>
-                  &#34;Before joining the program, i was intended to learn
-                  Database analysis but on my arriver, i attended the web class
-                  once and thereafter, i suddenly developed a passion for
-                  website designing and its been a experience Learning.&#34;
-                </i>
-              </p>
-            </div>
-          </div>
-
-          <div className="animate-in slide-in-from-right duration-1000">
-            <div className="p-2">
-              {/* <Image src={image2} alt="/" className="rounded-xl" /> */}
-              <h2 className="font-bold text-xl">Stella</h2>
-            </div>
-
-            <div className=" space-y-4">
-              <div className="text-xl">
-                <h1 className="font-extrabold text-blue-500">
-                  Web Developer and Content Creator
-                </h1>
+              <div className="space-y-4">
+                <div className="text-xl">
+                  <h1 className="font-extrabold text-blue-500">
+                    Web Developer and Graphics Designer
+                  </h1>
+                </div>
+                <p className="sm:text-md mx-auto font-bold max:w-[20rem]">
+                  <i>
+                    &#34;I joined the academy,hoping to learn a few basics about
+                    computer and i really haven&apos;t been dissappointed. Now i
+                    know a lot more than i thought to learn and my appreciation
+                    goes to my amazing instructors who are friendly and down to
+                    earth.&#34;
+                  </i>
+                </p>
               </div>
-              <p className="sm:text-md mx-auto font-bold max:w-[20rem]">
-                <i>
-                  &#34;Before joining the Program, i self-learned front-end Web
-                  design for the first week and amazingly,i learnt more than i
-                  ever self-learnt on my first day in class&#34;
-                </i>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* tech for coppers */}
-      <ProgramsLayout />
-    </div>
-  );
-};
 
-export default programs;
+              {/* <div className="animate-in slide-in-from-right duration-1000 section hidden">
+                <div className="p-2">
+                  <h2 className="font-bold text-xl">Deborah</h2>
+                </div>
+                <div className="space-y-4">
+                  <div className="text-xl">
+                    <h1 className="font-extrabold text-blue-500">
+                      Web Developer and Graphics Designer
+                    </h1>
+                  </div>
+                  <p className="sm:text-md mx-auto font-bold max:w-[20rem]">
+                    <i>
+                      &#34;I joined the academy,hoping to learn a few basics
+                      about computer and i really haven&apos;t been
+                      dissappointed. Now i know a lot more than i thought to
+                      learn and my appreciation goes to my amazing instructors
+                      who are friendly and down to earth.&#34;
+                    </i>
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center mt-4">
+                <button
+                  className="pagination-button mx-2 active"
+                  data-section="1"
+                >
+                  1
+                </button>
+                <button className="pagination-button mx-2" data-section="2">
+                  2
+                </button>
+                <button className="pagination-button mx-2" data-section="3">
+                  3
+                </button>
+              </div> */}
+              
+
+              {/* <div className="py-4 grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5 text-center ">
+                <div className="animate-in slide-in-from-left duration-1000">
+                  <div className="p-2">
+                    <h2 className="font-bold text-xl">Deborah</h2>
+                  </div>
+  
+                  <div className="space-y-4">
+                    <div className="text-xl">
+                      <h1 className="font-extrabold text-blue-500">
+                        Web Developer and Graphics Designer
+                      </h1>
+                    </div>
+                    <p className="sm:text-md mx-auto font-bold max:w-[20rem]">
+                      <i>
+                        &#34;I joined the academy,hoping to learn a few basics
+                        about computer and i really haven&apos;t been
+                        dissappointed. Now i know a lot more than i thought to
+                        learn and my appreciation goes to my amazing instructors
+                        who are friendly and down to earth.&#34;
+                      </i>
+                    </p>
+                  </div>
+                </div>
+  
+                <div className="animate-in slide-in-from-top duration-1000">
+                  <div className="p-2">
+                    <h2 className="font-bold text-xl">Isaac</h2>
+                  </div>
+  
+                  <div className=" space-y-4">
+                    <div className="text-xl">
+                      <h1 className="font-extrabold text-blue-500">
+                        Snr Web Developer and Database Analyst
+                      </h1>
+                    </div>
+                    <p className="sm:text-md mx-auto font-bold max:w-[20rem]">
+                      <i>
+                        &#34;Before joining the program, i was intended to learn
+                        Database analysis but on my arriver, i attended the web
+                        class once and thereafter, i suddenly developed a passion
+                        for website designing and its been a experience
+                        Learning.&#34;
+                      </i>
+                    </p>
+                  </div>
+                </div>
+  
+                <div className="animate-in slide-in-from-right duration-1000">
+                  <div className="p-2">
+                    <h2 className="font-bold text-xl">Stella</h2>
+                  </div>
+  
+                  <div className=" space-y-4">
+                    <div className="text-xl">
+                      <h1 className="font-extrabold text-blue-500">
+                        Web Developer and Content Creator
+                      </h1>
+                    </div>
+                    <p className="sm:text-md mx-auto font-bold max:w-[20rem]">
+                      <i>
+                        &#34;Before joining the Program, i self-learned front-end
+                        Web design for the first week and amazingly,i learnt more
+                        than i ever self-learnt on my first day in class&#34;
+                      </i>
+                    </p>
+                  </div>
+                </div>
+              </div> */}
