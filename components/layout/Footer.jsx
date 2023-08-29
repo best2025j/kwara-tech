@@ -63,7 +63,7 @@ const Footer = () => {
                 <a>
                   <Image
                     src={image}
-                    alt="image must be seen"
+                    alt="image seen"
                     width="150px"
                     height="138px"
                     className="cursor-pointer"
