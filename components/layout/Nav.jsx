@@ -58,10 +58,10 @@ const Nav = () => {
           </li>
           <li
             className={
-              asPath.includes("/ourService") ? activeLink : inactiveLink
+              asPath.includes("/ourServices") ? activeLink : inactiveLink
             }
           >
-            <Link href="/ourService">Our Services</Link>
+            <Link href="/ourServices">Our Services</Link>
           </li>
           <li className={asPath.includes("/blog") ? activeLink : inactiveLink}>
             <Link href="/blog">Blog</Link>
@@ -157,13 +157,13 @@ const Nav = () => {
                 </li>
                 <li
                   className={
-                    asPath.includes("/ourService")
+                    asPath.includes("/ourServices")
                       ? "text-lightBlue"
                       : "text-sm"
                   }
                   onClick={handleClose}
                 >
-                  <Link href="/ourService">Our service</Link>
+                  <Link href="/ourServices">Our service</Link>
                 </li>
                 <li
                   className={

@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "jest",
     "lint": "next lint"
   },
   "dependencies": {
@@ -39,11 +40,15 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.3.1",
+    "@testing-library/jest-dom": "^6.1.2",
+    "@testing-library/react": "^14.0.0",
     "autoprefixer": "^10.4.11",
+    "cypress": "^13.0.0",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.6.4",
     "postcss": "^8.4.16",
     "react-icons": "^4.10.1",
     "tailwindcss": "^3.1.8",
