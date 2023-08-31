@@ -27,7 +27,7 @@ const Nav = () => {
   const handClick = () => setNav(!nav);
   const handleClose = () => setNav(!nav);
 
-  console.log(asPath.includes("/ourService"), "ourService");
+  // console.log(asPath.includes("/ourService"), "ourService");
 
   return (
     <div
