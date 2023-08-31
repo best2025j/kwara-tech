@@ -40,8 +40,8 @@ const staffData = [
     image: "/vic.jpeg",
   },
   {
-    name: "Adeniyi Ogundiran",
-    position: "Business Development Executive / Digital Marketing instructor",
+    name: "OGUNDIRAN Moshood Adeniyi",
+    position: "Busines Development Executive and Digital Marketing Instructor",
     image: "/ade1.jpeg",
   },
 
@@ -50,12 +50,6 @@ const staffData = [
     position:
       "Business Executive, Project Manager and Assistant Executive to CE.",
     image: "/igboman.jpeg",
-  },
-
-  {
-    name: "Ogundiran Moshood Adeniyi",
-    position: "Busines Development Executive and Digital Marketing Instructor",
-    image: "/vercel.svg",
   },
 
   {
@@ -101,7 +95,6 @@ const Staffs = () => {
                   <h1 className="text-slate-700 dark:text-slate-500">
                     {item.position}
                   </h1>
-                 
                 </div>
               </div>
             </div>
