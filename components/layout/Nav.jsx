@@ -27,6 +27,8 @@ const Nav = () => {
   const handClick = () => setNav(!nav);
   const handleClose = () => setNav(!nav);
 
+  console.log(asPath.includes("/ourService"), "ourService");
+
   return (
     <div
       className={
@@ -92,7 +94,7 @@ const Nav = () => {
           </div>
         </div>
 
-      <div onClick={handClick} className="md:hidden cursor-pointer"> 
+        <div onClick={handClick} className="md:hidden cursor-pointer">
           <AiOutlineMenu size={25} />
         </div>
       </div>
