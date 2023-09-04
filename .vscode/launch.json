@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "name": "vscode-jest-tests.v2",
+            "request": "launch",
+            "args": [
+                "test",
+                "--runInBand",
+                "--watchAll=false",
+                "--testNamePattern",
+                "${jest.testNamePattern}",
+                "--runTestsByPath",
+                "${jest.testFile}"
+            ],
+            "cwd": "c:\\Users\\KWARA-eLibraryFT3\\Desktop\\kwara-tech",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            // "disableOptimisticBPs": true,
+            "runtimeExecutable": "yarn"
+        }
+    ]
+}
