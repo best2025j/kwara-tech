@@ -22,7 +22,7 @@ const Tech4Copper = () => {
 
           <div className="h-full w-full md:w-1/2 space-y-6 text-center mr-14 flex flex-col justify-center items-center  py-20 sm:py-0">
             <h1 className="sm:text-4xl font-bold text-3xl">
-              Corper&apos; Tech Journey
+              Corper&apos;s Tech Journey
             </h1>
             <p className="max-w-2xl sm:text-2xl">
               Our Tech 4 Kopa program offers a unique training opportunity for

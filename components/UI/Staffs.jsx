@@ -18,21 +18,22 @@ const staffData = [
     position: "Executive director",
     image: "/mrIbrahim.jpeg",
   },
+  // {
+  //   name: "JAMES, Moses Sambo",
+  //   position: "Business Development Manager",
+  //   image: "/mrSambo2.jpeg",
+  // },
+  // {
+  //   name: "Orolu Bisi Morenike",
+  //   position: "Accountant/HRM",
+  //   image: "/acct.jpeg",
+  // },
   {
-    name: "JAMES, Moses Sambo",
-    position: "Business Development Manager",
-    image: "/mrSambo2.jpeg",
+    name: "OGUNDIRAN Moshood Adeniyi",
+    position: "Busines Development Executive and Digital Marketing Instructor",
+    image: "/ade1.jpeg",
   },
-  {
-    name: "Orolu Bisi Morenike",
-    position: "Accountant/HRM",
-    image: "/acct.jpeg",
-  },
-  {
-    name: "Gt",
-    position: "Software Engineer",
-    image: "/gt1.jpeg",
-  },
+  
 
   {
     name: "Victor Olumati Ajayi",
@@ -40,23 +41,23 @@ const staffData = [
     image: "/vic.jpeg",
   },
   {
-    name: "OGUNDIRAN Moshood Adeniyi",
-    position: "Busines Development Executive and Digital Marketing Instructor",
-    image: "/ade1.jpeg",
+    name: "Gt",
+    position: "Software Engineer",
+    image: "/gt1.jpeg",
   },
 
-  {
-    name: "Okechukwu Joshua",
-    position:
-      "Business Executive, Project Manager and Assistant Executive to CE.",
-    image: "/igboman.jpeg",
-  },
+  // {
+  //   name: "Okechukwu Joshua",
+  //   position:
+  //     "Business Executive, Project Manager and Assistant Executive to CE.",
+  //   image: "/igboman.jpeg",
+  // },
 
-  {
-    name: "Abdul-Azeez A. Isa",
-    position: "Frontend Engineer",
-    image: "/codelord.jpeg",
-  },
+  // {
+  //   name: "Abdul-Azeez A. Isa",
+  //   position: "Frontend Engineer",
+  //   image: "/codelord.jpeg",
+  // },
 ];
 
 const Staffs = () => {

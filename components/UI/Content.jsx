@@ -17,15 +17,15 @@ const Content = () => {
         <h1 className="sm:text-4xl text-2xl sm:py-6">
           Kickstart your tech career with{" "}
           <b className="bg-clip-text text-transparent bg-gradient-to-r from-[#fff] via-yellow-500 to-[#55e022]">
-            kwara Tech Academy.
+            Kwara Tech Academy.
           </b>
         </h1>
 
         <p className="font-medium text-lg">
           We are on a mission to empower young passionate tech innovators round
-          the globe, helping them to build qualitative and high-paying tech
-          careers and to become glober tech giant through our virtual and on
-          site training and empowerment programmes, interships and job-placement
+          the global, helping them build qualitative and high-paying tech
+          careers to become glober tech giant through our virtual and on-site
+          training and empowerment programmes, internships and job-placement
           opportunities.
         </p>
 
@@ -38,7 +38,7 @@ const Content = () => {
                 <h1 className="font-bold">Acquire In-demand Skills </h1>
               </div>
               <p className="sm:text-base mx-auto font-medium max:w-[20rem]">
-                You&#39;re never wrong acquiring an I.T skills. We are set to
+                You&#39;re never wrong acquiring an I.T skill. We are set to
                 help you through the process.
               </p>
             </div>
@@ -52,8 +52,8 @@ const Content = () => {
                 <h1 className="font-bold">Step Up Your Careers In Game</h1>
               </div>
               <p className="sm:text-base mx-auto font-medium max:w-[20rem]">
-                We will coach and provide you with intership and job-placement
-                opportunities, to get started and move your career 4x ahead.
+                We will coach and provide you with internship and job placement
+                opportunities, to get started and move your career 10x ahead.
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@ const Content = () => {
                 <h1 className="font-bold">Get Certified</h1>
               </div>
               <p className="sm:text-base mx-auto font-medium max:w-[20rem]">
-                You will not only get qualify with us, you will be certified as
+                You will not only get qualified with us, you will be certified as
                 a tech professional, making you indispensable.
               </p>
             </div>
@@ -80,7 +80,7 @@ const Content = () => {
                 <h1 className="font-bold">Upskill Your Team</h1>
               </div>
               <p className="sm:text-base mx-auto font-medium max:w-[20rem]">
-                Contact us to help you upskill your team to a whole new leavel
+                Contact us to help you upskill your team to a whole new level
                 with our result-proved corporate training programs.
               </p>
             </div>
