@@ -59,7 +59,7 @@ const Courses = () => {
               <li>content creation</li>
               <li>Blog editing</li>
               <li>Content strategy</li>
-              <li>Content marketing / SCO</li>
+              <li>Content marketing / SEO</li>
             </ul>
           </div>
         </div>

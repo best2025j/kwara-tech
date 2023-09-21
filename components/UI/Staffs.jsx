@@ -30,8 +30,8 @@ const staffData = [
   // },
   {
     name: "OGUNDIRAN Moshood Adeniyi",
-    position: "Busines Development Executive and Digital Marketing Instructor",
-    image: "/ade1.jpeg",
+    position: "Business Development Executive",
+    image: "/ade2.jpeg",
   },
   
 

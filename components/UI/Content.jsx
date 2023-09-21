@@ -23,10 +23,10 @@ const Content = () => {
 
         <p className="font-medium text-lg">
           We are on a mission to empower young passionate tech innovators round
-          the global, helping them build qualitative and high-paying tech
-          careers to become glober tech giant through our virtual and on-site
-          training and empowerment programmes, internships and job-placement
-          opportunities.
+          the globe, helping them build qualitative and high-paying tech
+          careers to become global tech giants. Through our virtual and on-site
+          trainings, empowerment programmes, internships and job-placement
+          opportunities, Kwara Tech Academy position you ahead of the curve.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-5 text-center ">
@@ -38,8 +38,8 @@ const Content = () => {
                 <h1 className="font-bold">Acquire In-demand Skills </h1>
               </div>
               <p className="sm:text-base mx-auto font-medium max:w-[20rem]">
-                You&#39;re never wrong acquiring an I.T skill. We are set to
-                help you through the process.
+                You&#39;re never wrong acquiring a tech skill with us. We are set to
+                help you through the process of attaining your dream goals.
               </p>
             </div>
           </div>
@@ -49,7 +49,7 @@ const Content = () => {
 
             <div className=" space-y-4">
               <div className="text-base">
-                <h1 className="font-bold">Step Up Your Careers In Game</h1>
+                <h1 className="font-bold">Step Up Your Careers Game</h1>
               </div>
               <p className="sm:text-base mx-auto font-medium max:w-[20rem]">
                 We will coach and provide you with internship and job placement
@@ -81,7 +81,7 @@ const Content = () => {
               </div>
               <p className="sm:text-base mx-auto font-medium max:w-[20rem]">
                 Contact us to help you upskill your team to a whole new level
-                with our result-proved corporate training programs.
+                with our result-proven corporate training programs.
               </p>
             </div>
           </div>

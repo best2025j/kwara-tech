@@ -39,7 +39,7 @@ const Members = () => {
           </h1>
           <p className="text-normal text-sm dark:text-blue-300 md:max-w-xl">
             with kwara-tech academy, you are one step closer to securing your
-            technological future.kwaratech academy puts you ahead of your peer,
+            technological future. <b className="text-black dark:text-white">kwara tech academy</b> puts you ahead of your peers,
             provides you with real-world knowledge, guarantees jobs, and much
             more.
           </p>
