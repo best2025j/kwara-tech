@@ -7,7 +7,7 @@ const Consulting = () => {
 
   const numbers = [
     { icon: <PiHandPointingLight />, label: "Project", count: 100 },
-    { icon: <FaUser />, label: "client", count: 40 },
+    { icon: <FaUser />, label: "client", count: 250 },
     { icon: <FaUser />, label: "Our team", count: 12 },
     { icon: <FaAward />, label: "awards", count: 40 },
   ];
@@ -28,10 +28,10 @@ const Consulting = () => {
     <div className="py-20 h-full w-full">
       <div className="flex justify-center items-center flex-col flex-grow space-y-3 ">
         <h1 className="font-bold text-xl md:text-4xl capitalize">
-          Consulting successes
+          Consulting success
         </h1>
         <p className="px-6 sm:px-0 capitalize text-xl md:text-2xl sm:font-medium text-center sm:max-w-3xl">
-          we pride ourselves in delevring top notch B to B and B to c Services
+          We pride ourselves in delivering top-notch <b>B2B and B2C</b> Solutions tailored to our esteemed Clientele Services
         </p>
       </div>
       <div className="grid sm:grid-cols-2 px-8 py-6 md:grid-cols-4 gap-6 text-white">
@@ -39,7 +39,7 @@ const Consulting = () => {
           <div
             key={index}
             className={
-              "text-center bg-[#417de5] dark:bg-black p-8 flex justify-center items-center flex-col w-full rounded-xl border-2 hover:scale-105 ease-in  duration-300"
+              "text-center bg-[#417de5] dark:bg-black p-8 flex justify-center items-center flex-col w-full rounded-3xl border-2 hover:scale-105 ease-in  duration-300"
             }
           >
             <div className="text-2xl">{item.icon}</div>

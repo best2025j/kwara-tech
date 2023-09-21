@@ -9,7 +9,7 @@ import ButtonWhite from "../Buttons/ButtonWhite";
 
 const staffData = [
   {
-    name: "  Ayobami OLUDELE ",
+    name: " OLUDELE Ayobami  ",
     position: "CEO",
     image: "/mrAyo.jpeg",
   },
@@ -36,7 +36,7 @@ const staffData = [
   
 
   {
-    name: "Victor Olumati Ajayi",
+    name: " AJAYI Victor Olumati",
     position: " Media Director/ Graphics Designer",
     image: "/vic.jpeg",
   },
