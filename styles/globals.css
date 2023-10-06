@@ -8,6 +8,12 @@ html {
 
 }
 
+/* Add this to your CSS */
+.active-link {
+  color: red; /* Change this to the desired color for the active link */
+}
+
+
 /* .section:not(.active) {
   display: none;
 }

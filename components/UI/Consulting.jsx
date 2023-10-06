@@ -7,7 +7,7 @@ const Consulting = () => {
 
   const numbers = [
     { icon: <PiHandPointingLight />, label: "Project", count: 100 },
-    { icon: <FaUser />, label: "client", count: 250 },
+    { icon: <FaUser />, label: "client", count: 175 },
     { icon: <FaUser />, label: "Our team", count: 12 },
     { icon: <FaAward />, label: "awards", count: 40 },
   ];

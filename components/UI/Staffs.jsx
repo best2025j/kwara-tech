@@ -35,11 +35,11 @@ const staffData = [
   },
   
 
-  {
-    name: " AJAYI Victor Olumati",
-    position: " Media Director/ Graphics Designer",
-    image: "/vic.jpeg",
-  },
+  // {
+  //   name: " AJAYI Victor Olumati",
+  //   position: " Media Director/ Graphics Designer",
+  //   image: "/vic.jpeg",
+  // },
   {
     name: "Gt",
     position: "Software Engineer",
